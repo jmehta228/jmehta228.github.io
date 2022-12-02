@@ -1,9 +1,9 @@
 h1 {
-    color: blue;
+    color: rgba(255, 0, 0, 0.646);
 }
-body {
+/* body {
     color: blue;
-}
+} */
 p {
     color: blue;
 }
