@@ -139,21 +139,19 @@ document.addEventListener('keydown', function(e) {
   }
 });
 
-// start the game
+// // start the game
 requestAnimationFrame(loop);
 
 
 
 
-function myFunction() {
-  document.getElementById('end_msg').innerHTML="";
-  alert('Press confirm to continue');
-}
+// function stopScroll() {
+//   window.scrollTo(0, 600);
+// }
 
-//stop playing
-$(document).ready(function(){
-		$('#btn_stop').click(function(){
-      document.getElementById('end_msg').innerHTML="Game stoped by player" ;
-      setTimeout(myFunction, 1000);	
-		});
-	});
+
+// document.addEventListener("keydown", function(event) {
+//   if (event.code === "ArrowUp" || event.code === "ArrowDown" || event.code === "ArrowLeft" || event.code === "ArrowRight") {
+//     window.scrollTo(0,0);
+//   }
+// });
