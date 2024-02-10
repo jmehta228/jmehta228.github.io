@@ -16,12 +16,6 @@ h5 {
 a:link {
     color:rgb(255, 255, 255);
 }
-footer a:link {
-    color:rgb(0, 35, 60);
-}
-footer a:hover {
-    color: white
-}
 a:hover {
     color: rgb(100, 100, 100);
 }
@@ -57,6 +51,9 @@ a {
     -webkit-transition:.5s;
     transition:.5s;
 }
+#portfolio a {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 ul {
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -91,6 +88,9 @@ header {
 header h1 {
     font-weight: normal;
 }
+header li {
+    font-size: large;
+}
 footer a {
     text-decoration: none;
     color: rgb(0, 35, 60);
@@ -111,7 +111,7 @@ canvas body {
     background-color: yellow;
 }
 
-/* animation css */
+/* typing animation css */
 
 .wrapper {
     height: 25vh;
