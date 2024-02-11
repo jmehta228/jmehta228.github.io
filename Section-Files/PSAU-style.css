@@ -9,7 +9,7 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
-#wrap {
+/* #wrap {
     float: left;
     position: relative;
     left: 50%;
@@ -18,7 +18,7 @@ p {
     float: right;
     position: relative;
     left: -50%;
-}
+} */
 #content h4 {
     font-size: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -30,7 +30,7 @@ p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
-#backLink-Section a {
+#backLink a {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
@@ -41,8 +41,18 @@ p {
     text-decoration: none;
 }
 #backLink a:hover {
-    color:rgb(255, 255, 255);
+    color: rgb(100, 100, 100);
     text-decoration: none;
+}
+
+#backLink a {
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
 }
 
 
