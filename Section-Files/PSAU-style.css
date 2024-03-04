@@ -7,55 +7,24 @@ header {
 p {
     font-size: large;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: #ffffff;
 }
-/* #wrap {
-    float: left;
-    position: relative;
-    left: 50%;
-}
-#content {
-    float: right;
-    position: relative;
-    left: -50%;
-} */
-#content h4 {
+h4 {
     font-size: 24px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
     font-weight: normal;
 }
-#content ul li {
+li {
     font-size: 20px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
 }
-#backLink a {
+a {
     color: white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
-
-#backLink a:link {
-    color:rgb(255, 255, 255);
-    text-decoration: none;
-}
-#backLink a:hover {
-    color: rgb(100, 100, 100);
-    text-decoration: none;
-}
-
-#backLink a {
-    color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    transition:.5s;
-}
-
-
 a:link {
     color:rgb(255, 255, 255);
 }
