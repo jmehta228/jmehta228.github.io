@@ -4,7 +4,7 @@ window.onload = function() {
 
     const firstText = "     > gcc main.c -o main.out";
     const secondText = "     > ./main.out";
-    const thirdText = "     > Hello";
+    const thirdText = "     Hello";
 
 
     // Set font properties
@@ -22,7 +22,7 @@ window.onload = function() {
     }
 
     // Function to animate typing text onto canvas
-    function animateTyping(text, yPos) {
+    function animateTyping(text, yPos, callback, delay = 0) {
         let index = 0;
         const intervalId = setInterval(() => {
             ctx.clearRect(0, yPos - 15, canvas.width, 20); // Clear the area before drawing the next character
@@ -30,11 +30,8 @@ window.onload = function() {
             index++;
             if (index > text.length) {
                 clearInterval(intervalId);
-                // After drawing the current text, start drawing the next one
-                if (text === firstText) {
-                    animateTyping(secondText, text2Y);
-                } else if (text === secondText) {
-                    animateTyping(thirdText, text3Y);
+                if (callback) {
+                    setTimeout(callback, delay);
                 }
             }
         }, 100); // Adjust the typing speed here
@@ -42,8 +39,16 @@ window.onload = function() {
 
     drawTopArea();
 
-    // Start typing out the first line immediately
-    animateTyping(firstText, text1Y);
+    animateTyping(firstText, text1Y, () => {
+        animateTyping(secondText, text2Y, () => {
+            const delayBeforeThirdText = 1000;
+            setTimeout(() => {
+                ctx.clearRect(0, text3Y - 15, canvas.width, 20); // Clear the area before drawing the text
+                ctx.fillText(thirdText, 50, text3Y); // Draw the third text
+            }, delayBeforeThirdText);
+        });
+    });
+    
 
     // Draw window controls (red, yellow, and green circles)
     ctx.fillStyle = '#FF3B30'; // Red color
