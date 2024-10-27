@@ -47,3 +47,7 @@ button[type=submit]:hover {
     padding: 20px;
     width: 700px;
 }
+
+@media (max-width: 450px) {
+
+}
