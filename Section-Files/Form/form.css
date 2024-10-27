@@ -48,6 +48,33 @@ button[type=submit]:hover {
     width: 700px;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
+    .container {
+        width: 90%;             /* Slightly less width to avoid touching screen edges */
+        padding: 15px;          /* Smaller padding for compact fit */
+    }
 
+    input[type=text], select, textarea, button[type=submit] {
+        padding: 10px;          /* Adjust padding on input fields for smaller screens */
+        font-size: 16px;        /* Reduce font size */
+    }
+
+    button[type=submit] {
+        font-size: 15px;        /* Reduce button font size for compact layout */
+    }
+
+    label {
+        font-size: 14px;        /* Adjust label font size */
+    }
+
+    /* Additional spacing adjustments */
+
+    input[type=text], select, textarea {
+        margin-bottom: 12px;    /* Reduce margin between fields */
+    }
+
+    /* Center container on smaller screens */
+    body {
+        padding: 10px;
+    }
 }
