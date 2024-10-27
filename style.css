@@ -1,10 +1,8 @@
 h1 {
     color: rgb(255, 255, 255);
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h2 {
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 h3 {
@@ -13,7 +11,6 @@ h3 {
 }
 h5 {
     color: rgb(255, 255, 255);
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 a:link {
@@ -34,22 +31,19 @@ html {
 }
 body {
     color: white;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: rgb(0, 35, 60);
+    background-color: rgb(0, 40, 70);
     margin: 0;
 }
 span {
     color: white
 }
 p {
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 20px;
 }
 a {
     color: white;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     -o-transition:.5s;
     -ms-transition:.5s;
@@ -58,12 +52,10 @@ a {
     transition:.5s;
 }
 #portfolio a {
-    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ul {
     color: white;
-    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ul.horizontal-list {
@@ -81,14 +73,12 @@ li {
 footer {
     float: left;
     width: 100%;
-    /* background-color: rgb(50, 105, 185); */
     text-align: center;
 }
 article.portfolio-card p {
     font-weight: normal;
 }
 header {
-    /* background-color: rgb(0, 40, 60); */
     padding: 20px;
     text-align: center;
 }
@@ -101,10 +91,7 @@ header li {
 header li a {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-footer a {
-    text-decoration: none;
-    color: rgb(0, 35, 60);
-}
+
 canvas {
     background-color: black;
 }
@@ -114,5 +101,12 @@ canvas body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+}
+
+.horizontal-list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Evenly space items */
     align-items: center;
 }
