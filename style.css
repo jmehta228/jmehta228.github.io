@@ -111,8 +111,6 @@ canvas body {
     width: 1000px;
 }
 
-
-
 @media (max-width: 600px) {
     h1 {
         font-size: 2.5em;
@@ -120,7 +118,13 @@ canvas body {
     h5 {
         font-size: 1.2em;
     }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     nav ul {
+        display: flex;
         flex-direction: column;
         align-items: flex-start;
     }
@@ -145,23 +149,292 @@ canvas body {
         font-size: 20px;
         width: 300px;
     }
-}
 
-/* @media (max-width: 450px) {
-    h1 {
-        font-size: 2em;
-    }
-    p {
-        font-size: 1.2em;
-    }
-    ul li {
+    .projects-list {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
         flex-direction: column;
-        align-items: flex-start;
-
+        align-items: center;
     }
 
-    #coursesPtagdesc {
-        font-size: 50px;
-        width: 1000px;
+    .projects-list li p {
+        font-size: 13px !important;
+        width: 50%;
+        text-align: left;
+        margin: 0;
+        padding: 20px 20px;
     }
-} */
+
+    .projects-list li a {
+        text-decoration: none;
+    }
+
+    .recent-projects-title {
+        padding: 20px;
+        font-size: large !important;
+    }
+
+    .patient-system-application-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .wine-quality-prediction-with-machine-learning-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .wine-quality-prediction-with-machine-learning-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .w1 {
+        width: 100%;
+        height: auto;
+    }
+    .w2 {
+        width: 100%;
+        height: auto;
+    }
+    .w3 {
+        width: 100%;
+        height: auto;
+    }
+    .w4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .stock-price-prediction-with-machine-learning-and-tensorflow-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+    }
+    .stock-price-prediction-with-machine-learning-and-tensorflow-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .spptf1 {
+        width: 100%;
+        height: auto;
+    }
+    .spptf2 {
+        width: 100%;
+        height: auto;
+    }
+    .spptf3 {
+        width: 100%;
+        height: auto;
+    }
+    .spptf4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .stock-price-prediction-with-machine-learning-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .stock-price-prediction-with-machine-learning-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .sppml1 {
+        width: 100%;
+        height: auto;
+    }
+    .sppml2 {
+        width: 100%;
+        height: auto;
+    }
+    .sppml3 {
+        width: 100%;
+        height: auto;
+    }
+    .sppml4 {
+        width: 100%;
+        height: auto;
+    }
+
+    .asteroids-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .asteroids-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .a1 {
+        width: 100%;
+        height: auto;
+    }
+    .a2 {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .patient-system-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .patient-system-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .ps1 {
+        width: 100%;
+        height: auto;
+    }
+    .ps2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .caeser-cipher-cryptography-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .caeser-cipher-cryptography-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .ccc1 {
+        width: 100%;
+        height: auto;
+    }
+    .ccc2 {
+        width: 100%;
+        height: auto;
+    }
+    .ccc3 {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .animal-scrap-book-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .animal-scrap-book-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .operating-system-poll-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .operating-system-poll-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .osp1 {
+        width: 100%;
+        height: auto;
+    }
+    .osp2 {
+        width: 100%;
+        height: auto;
+    }
+
+    .patient-system-application-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .wine-quality-prediction-with-machine-learning-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .stock-price-prediction-with-machine-learning-and-tensorflow-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .stock-price-prediction-with-machine-learning-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .asteroids-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .patient-system-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .caeser-cipher-cryptography-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .animal-scrap-book-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .operating-system-poll-class {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    
+}

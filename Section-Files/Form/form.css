@@ -49,32 +49,30 @@ button[type=submit]:hover {
 }
 
 @media (max-width: 600px) {
-    .container {
-        width: 90%;             /* Slightly less width to avoid touching screen edges */
-        padding: 15px;          /* Smaller padding for compact fit */
+    body {
+        height: auto;
+        padding: 20px;
+        width: 40%;
     }
 
-    input[type=text], select, textarea, button[type=submit] {
-        padding: 10px;          /* Adjust padding on input fields for smaller screens */
-        font-size: 16px;        /* Reduce font size */
+    .container {
+        width: 40%;
+        padding: 15px;
+    }
+
+    input[type=text], select, textarea {
+        padding: 10px;
+        width: 40%;
     }
 
     button[type=submit] {
-        font-size: 15px;        /* Reduce button font size for compact layout */
+        padding: 10px 15px;
+        font-size: 16px;
+        width: 40%;
     }
 
     label {
-        font-size: 14px;        /* Adjust label font size */
-    }
-
-    /* Additional spacing adjustments */
-
-    input[type=text], select, textarea {
-        margin-bottom: 12px;    /* Reduce margin between fields */
-    }
-
-    /* Center container on smaller screens */
-    body {
-        padding: 10px;
+        font-size: 14px;
+        width: 40%;
     }
 }
