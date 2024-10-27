@@ -59,14 +59,19 @@ ul {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 ul.horizontal-list {
-    list-style: none;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
-ul.horizontal-list li {
+
+/* ul.horizontal-list li {
     display: inline-block;
     width: 10%;
     text-align: center;
     min-width: 2cm;
-}
+} */
+ 
 li {
     list-style-type: none;
 }
@@ -104,9 +109,10 @@ canvas body {
     align-items: center;
 }
 
-.horizontal-list {
+
+/* .horizontal-list {
     list-style-type: none;
     display: flex;
-    justify-content: space-around; /* Evenly space items */
+    justify-content: space-around;
     align-items: center;
-}
+} */
