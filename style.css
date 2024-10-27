@@ -373,7 +373,7 @@ canvas body {
         height: auto;
     }
 
-    .patient-system-application-class {
+    /* .patient-system-application-class {
         font-size: 18px !important;
         font-weight: 100 !important;
         width: 100% !important;
@@ -434,7 +434,7 @@ canvas body {
         font-weight: 100 !important;
         width: 100% !important;
         line-height: 2.0 !important;
-    }
+    } */
 
     
 }
