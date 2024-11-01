@@ -176,6 +176,36 @@ canvas body {
         font-size: large !important;
     }
 
+    .zomato-data-analysis-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .zomato-data-analysis-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .z1 {
+        width: 100%;
+        height: auto;
+    }
+    .z2 {
+        width: 100%;
+        height: auto;
+    }
+    .z3 {
+        width: 100%;
+        height: auto;
+    }
+    .z4 {
+        width: 100%;
+        height: auto;
+    }
+
     .patient-system-application-desc {
         font-size: 13px !important;
         font-weight: 100 !important;
