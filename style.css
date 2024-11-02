@@ -125,8 +125,10 @@ canvas body {
     }
     nav ul {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
+        font-size: smaller;
         align-items: flex-start;
+        gap: 8px;
     }
     nav ul li {
         margin: 15px 0;
@@ -174,6 +176,19 @@ canvas body {
     .recent-projects-title {
         padding: 20px;
         font-size: large !important;
+    }
+
+    .simple-data-pipeline-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .simple-data-pipeline-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
     }
 
     .zomato-data-analysis-title {
