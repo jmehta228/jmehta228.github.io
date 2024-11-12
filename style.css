@@ -178,6 +178,28 @@ canvas body {
         font-size: large !important;
     }
 
+    .snake-python-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .snake-python-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .sp1 {
+        width: 100%;
+        height: auto;
+    }
+    .sp2 {
+        width: 100%;
+        height: auto;
+    }
+
     .simple-data-pipeline-title {
         font-size: 18px !important;
         font-weight: 100 !important;
