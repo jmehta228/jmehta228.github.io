@@ -178,6 +178,28 @@ canvas body {
         font-size: large !important;
     }
 
+    .client-server-chat-application-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .client-server-chat-application-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
+    .csca1 {
+        width: 100%;
+        height: auto;
+    }
+    .csca2 {
+        width: 100%;
+        height: auto;
+    }
+
     .snake-python-title {
         font-size: 18px !important;
         font-weight: 100 !important;
