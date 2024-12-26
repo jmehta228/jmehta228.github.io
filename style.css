@@ -173,6 +173,11 @@ canvas body {
         text-decoration: none;
     }
 
+    .current-projects-title {
+        padding: 20px;
+        font-size: large !important;
+    }
+
     .recent-projects-title {
         padding: 20px;
         font-size: large !important;
@@ -263,6 +268,13 @@ canvas body {
     .z4 {
         width: 100%;
         height: auto;
+    }
+
+    .patient-system-application-v3-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
     }
 
     .patient-system-application-desc {
