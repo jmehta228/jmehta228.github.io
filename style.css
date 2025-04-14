@@ -183,6 +183,19 @@ canvas body {
         font-size: large !important;
     }
 
+    .task-manager-title {
+        font-size: 18px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+    .task-manager-desc {
+        font-size: 13px !important;
+        font-weight: 100 !important;
+        width: 100% !important;
+        line-height: 2.0 !important;
+    }
+
     .brain-tumor-classification-title {
         font-size: 18px !important;
         font-weight: 100 !important;
