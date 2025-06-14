@@ -11,110 +11,159 @@
     </head>
 
     <body>
-        <div id="root">
-            <header>
-                <section id="headerSection"></section>
+        <div id="root">            
+            <header class="header">
                 <div class="my-container">
-                    <br>
-                    <h1><center><a href="/index.html", style="text-decoration: none;">Jaisal Mehta</a></center></h1>
-                    <br>
-                    <nav>
+                    <h1 class="site-title">
+                        <a href="/index.html">Jaisal Mehta</a>
+                    </h1>
+                    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+                    <!-- Desktop Nav -->
+                    <nav class="nav-desktop">
                         <ul class="horizontal-list">
-                            <li><a href="/index.html", style="text-decoration: none;">Home</a></li>
-                            <li><a href="/Section-Files/projects-section.html", style="text-decoration: none">Projects</a></li>
-                            <li><a href="/Section-Files/contact-section.html", style="text-decoration: none">Contact</a></li>
-                            <li><a href="/Resume/Jaisal-Mehta-Resume.pdf", target="_blank", style="text-decoration: none">Resume</a></li>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/Section-Files/projects-section.html">Projects</a></li>
+                            <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
                         </ul>
                     </nav>
                 </div>
+
+                <!-- Mobile Nav -->
+                <nav class="nav-menu" id="mobileMenu">
+                    <ul class="vertical-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Section-Files/projects-section.html">Projects</a></li>
+                    <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </nav>
             </header>
-            <section id="portfolio">
-                <center>
-                    <div style="text-align: center;">
-                        <div style="display: inline-block; text-align: left;">
-                            <div class="portfolio-card">
-                                <center><h1 class="recent-projects-title", style="font-size: 30px; width: 500px;">Recent Projects</h1></center>
-                                <br>
-
-                                <div class="card-grid">
-
-                                    <div class="task-manager-card">
-                                        <div class="task-manager-container">
-                                            <h1>Task Manager</h1>
-                                            <br>
-                                            <p style="font-size: 16px;">The Task Manager web application is a full-stack project built using React for the frontend, Java/Spring Boot for the backend, and MongoDB for the database. The web app allows users to register, log in, and manage their personal tasks, including adding, viewing, completing, and deleting tasks. Each user's data is securely stored and isolated, ensuring personalized task tracking. The application is designed with a responsive UI, RESTful API architecture, and secure data handling practices to provide a smooth and intuitive user experience.</p>
-                                            <br>
-                                            <a href="https://github.com/jmehta228/Task-Manager-Project" target="_blank">
-                                                <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="github-logo" style="width: 40px; height: 40px;">
-                                            </a>
+            <div id="portfolio">
+                <div style="text-align: center;">
+                    <div style="display: inline-block; text-align: left;">
+                        <div class="portfolio-card">
+                            <center><h1 class="recent-projects-title", style="font-size: 30px; width: 500px;">Featured Projects</h1></center>
+                            <div class="card-grid">
+                                <div class="task-manager-card">
+                                    <div class="task-manager-container">
+                                        <h1 class="project-title">
+                                            <a href="https://github.com/jmehta228/Task-Manager-Project" target="_blank">Task Manager</a>
+                                        </h1>
+                                        <p style="font-size: 16px;">The Task Manager web application is a full-stack project built using React for the frontend, Java/Spring Boot for the backend, and MongoDB for the database. The web app allows users to register, log in, and manage their personal tasks, including adding, viewing, completing, and deleting tasks. Each user's data is securely stored and isolated, ensuring personalized task tracking. The application is designed with a responsive UI, RESTful API architecture, and secure data handling practices to provide a smooth and intuitive user experience.</p>
+                                        <br>
+                                        <div class="tech-list">
+                                            <span>Java</span>
+                                            <span>Spring Boot</span>
+                                            <span>Rest API</span>
+                                            <span>React</span>
+                                            <span>JavaScript</span>
+                                            <span>CSS</span>
+                                            <span>MongoDB</span>
                                         </div>
                                     </div>
-
-                                    <div class="brain-tumor-classification-card">
-                                        <div class="brain-tumor-classification-container">
-                                            <h1>Brain Tumor Classification</h1>
-                                            <br>
-                                            <p style="font-size: 16px;">This project applies machine learning techniques to classify brain tumors using MRI images. Utilizing a dataset from Kaggle with four tumor categories—glioma, meningioma, pituitary, and no tumor—it involves preprocessing the images (resizing and flattening), then training K-Nearest Neighbors machine learning models. Model performance is evaluated through accuracy, precision, recall, and F1-score, with visual insights provided via confusion matrices and heatmaps.</p>
-                                            <br>
-                                            <a href="https://github.com/jmehta228/Brain-Tumor-Classification" target="_blank">
-                                                <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="github-logo" style="width: 40px; height: 40px;">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="patient-system-application-card">
-                                        <div class="patient-system-application-container">
-                                            <h1>Patient System Application</h1>
-                                            <br>
-                                            <p style="font-size: 16px;">This Java-based patient management system uses a Swing GUI and SQL database integration to provide an interactive and efficient platform for handling patient records. Key features include secure login, data validation, advanced search, and full CRUD functionality. The system ensures reliable data storage and retrieval while offering a user-friendly interface. It builds on a previous version by adding a graphical interface, greatly enhancing usability and operational efficiency in healthcare settings.</p>
-                                            <br>
-                                            <a href="https://github.com/jmehta228/Patient_System_Application_V3" target="_blank">
-                                                <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="github-logo" style="width: 40px; height: 40px;">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="client-server-chat-application-card">
-                                        <div class="client-server-chat-application-container">
-                                            <h1>Client Server Chat Application</h1>
-                                            <br>
-                                            <p style="font-size: 16px;">This program is a simple TCP-based client-server chat application written in C, where a client can connect to a server and exchange messages interactively. The server, implemented in server.c and server.h, initializes a socket, binds to a specified address and port (9001), and waits for client connections. When a client connects, the server enters a message exchange loop, allowing both sides to send messages until either sends "exit" or disconnects. The client, implemented in client.c and client.h, establishes a connection to the server and records both sent and received messages in a transcript.txt file. The program handles socket creation, connection management, message exchange, and cleanup, making it a straightforward example of TCP communication between a client and server.</p>
-                                            <a href="https://github.com/jmehta228/Client-Server-Chat-Application" target="_blank">
-                                                <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="github-logo" style="width: 40px; height: 40px;">
-                                            </a>
-                                            <br>
-                                        </div>
-                                    </div>
-
-                                    <div class="simple-data-pipeline-card">
-                                        <div class="simple-data-pipeline-container">
-                                            <h1>Simple Data Pipeline</h1>
-                                            <br>
-                                            <p style="font-size: 16px;">The Python program retrieves real-time weather data from the WeatherAPI, processes it, and stores it in a MySQL database using an ETL (Extract, Transform, Load) approach. First, the getAPIResponse function extracts data by sending a GET request to the API, returning the JSON response if successful. Next, getAPIInfo transforms this JSON data by parsing and organizing relevant information (such as local time, location, temperature, and wind speed) into a list format. Finally, the transferToDatabase function loads the transformed data into a MySQL database named "WeatherData" by executing an SQL insert command. The main function integrates these steps, constructs the API URL, and prompts the user for a city or zipcode to retrieve weather data. The Python program is modular, with clear separation of the ETL stages, enabling efficient data processing and easy maintenance.</p>
-                                            <a href="https://github.com/jmehta228/Simple-Data-Pipeline" target="_blank">
-                                                <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="github-logo" style="width: 40px; height: 40px;">
-                                            </a>
-                                        </div>
-                                    </div>
-
-                                    <div class="animal-scrap-book-card">
-                                        <div class="animal-scrap-book-container">
-                                            <h1>Animal ScrapBook</h1>
-                                            <br>
-                                            <p style="font-size: 16px;">To shortly describe the application for the final project for iOS App Development, my partner and I essentially wanted to create an animal scrapbook app. The basis of this app will implement an apple developer provided createML model which will use the dataset to essentially classify an animal somebody takes a picture of in our app. The animal will then be recorded in an archive, also including how many times that certain animal has been captured. The app implements UIIMagePicker to classify whatever animal you take a picture of. The app will also implement notifications to remind the user to get on the app and do their daily animal finding. The goal of this app is to have the user collect animals and learn about ones they don't know about in a digital way.</p>
-                                            <a href="https://github.com/jmehta228/AnimalScrapBook" target="_blank">
-                                                <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="github-logo" style="width: 40px; height: 40px;">
-                                            </a>
-                                        </div>
-                                    </div>
-                                    
                                 </div>
 
+                                <div class="brain-tumor-classification-card">
+                                    <div class="brain-tumor-classification-container">
+                                        <h1 class="project-title">
+                                            <a href="https://github.com/jmehta228/Brain-Tumor-Classification" target="_blank">Brain Tumor Classification</a>
+                                        </h1>
+                                        <p style="font-size: 16px;">This project applies machine learning techniques to classify brain tumors using MRI images. Utilizing a dataset from Kaggle with four tumor categories—glioma, meningioma, pituitary, and no tumor—it involves preprocessing the images (resizing and flattening), then training K-Nearest Neighbors machine learning models. Model performance is evaluated through accuracy, precision, recall, and F1-score, with visual insights provided via confusion matrices and heatmaps.</p>
+                                        <br>
+                                        <div class="tech-list">
+                                            <span>Python</span>
+                                            <span>K-NN</span>
+                                            <span>OpenCV</span>
+                                            <span>Scikit-learn</span>
+                                            <span>Jupyter Notebook</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="patient-system-application-card">
+                                    <div class="patient-system-application-container">
+                                        <h1 class="project-title">
+                                            <a href="https://github.com/jmehta228/Patient_System_Application_V3" target="_blank">Patient System Application</a>
+                                        </h1>
+                                        <p style="font-size: 16px;">This Java-based patient management system uses a Swing GUI and SQL database integration to provide an interactive and efficient platform for handling patient records. Key features include secure login, data validation, advanced search, and full CRUD functionality. The system ensures reliable data storage and retrieval while offering a user-friendly interface. It builds on a previous version by adding a graphical interface, greatly enhancing usability and operational efficiency in healthcare settings.</p>
+                                        <br>
+                                        <div class="tech-list">
+                                            <span>Java</span>
+                                            <span>Java Swing</span>
+                                            <span>SQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="client-server-chat-application-card">
+                                    <div class="client-server-chat-application-container">
+                                        <h1 class="project-title">
+                                            <a href="https://github.com/jmehta228/Client-Server-Chat-Application" target="_blank">Client Server Chat Application</a>
+                                        </h1>
+                                        <p style="font-size: 16px;">This program is a simple TCP-based client-server chat application written in C, where a client can connect to a server and exchange messages interactively. The server, implemented in server.c and server.h, initializes a socket, binds to a specified address and port (9001), and waits for client connections. When a client connects, the server enters a message exchange loop, allowing both sides to send messages until either sends "exit" or disconnects. The client, implemented in client.c and client.h, establishes a connection to the server and records both sent and received messages in a transcript.txt file. The program handles socket creation, connection management, message exchange, and cleanup, making it a straightforward example of TCP communication between a client and server.</p>
+                                        <br>
+                                        <div class="tech-list">
+                                            <span>C</span>
+                                            <span>Unix</span>
+                                            <span>TCP/IP</span>
+                                            <span>Sockets</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="simple-data-pipeline-card">
+                                    <div class="simple-data-pipeline-container">
+                                        <h1 class="project-title">
+                                            <a href="https://github.com/jmehta228/Simple-Data-Pipeline" target="_blank">Simple Data Pipeline</a>
+                                        </h1>
+                                        <p style="font-size: 16px;">The Python program retrieves real-time weather data from the WeatherAPI, processes it, and stores it in a MySQL database using an ETL (Extract, Transform, Load) approach. First, the getAPIResponse function extracts data by sending a GET request to the API, returning the JSON response if successful. Next, getAPIInfo transforms this JSON data by parsing and organizing relevant information (such as local time, location, temperature, and wind speed) into a list format. Finally, the transferToDatabase function loads the transformed data into a MySQL database named "WeatherData" by executing an SQL insert command. The main function integrates these steps, constructs the API URL, and prompts the user for a city or zipcode to retrieve weather data. The Python program is modular, with clear separation of the ETL stages, enabling efficient data processing and easy maintenance.</p>
+                                        <br>
+                                        <div class="tech-list">
+                                            <span>Python</span>
+                                            <span>Rest API</span>
+                                            <span>SQL</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="animal-scrap-book-card">
+                                    <div class="animal-scrap-book-container">
+                                        <h1 class="project-title">
+                                            <a href="https://github.com/jmehta228/AnimalScrapBook" target="_blank">Animal ScrapBook</a>
+                                        </h1>
+                                        <p style="font-size: 16px;">To shortly describe the application for the final project for iOS App Development, my partner and I essentially wanted to create an animal scrapbook app. The basis of this app will implement an apple developer provided createML model which will use the dataset to essentially classify an animal somebody takes a picture of in our app. The animal will then be recorded in an archive, also including how many times that certain animal has been captured. The app implements UIIMagePicker to classify whatever animal you take a picture of. The app will also implement notifications to remind the user to get on the app and do their daily animal finding. The goal of this app is to have the user collect animals and learn about ones they don't know about in a digital way.</p>
+                                    </div>
+                                    <br>
+                                    <div class="tech-list">
+                                        <span>Swift</span>
+                                        <span>UIKit</span>
+                                        <span>CreateML</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </center>
-            </section>
+                </div>
+            </div>
+            <footer style="background-color: rgb(50, 70, 90); padding: 20px 0;">
+                <div class="footer-container">
+                    <nav class="footer-logos">
+                        <a href="https://github.com/jmehta228" target="_blank">
+                            <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="hello-section" style="width: 40px; height: 40px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jaisal-mehta/" target="_blank">
+                            <img src="/Images/LinkedIn-Logo (1).png" alt="LinkedIn Logo" class="hello-section" style="width: 40px; height: 40px;">
+                        </a>
+                    </nav>
+                    <p class="footer-title" style="font-size: large;">© Mehta Software Development</p>
+                </div>
+            </footer>
         </div> <!-- ROOT -->
+        <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('show');
+        }
+        </script>
     </body>
 </html>

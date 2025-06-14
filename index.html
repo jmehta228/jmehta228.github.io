@@ -12,144 +12,197 @@
 
     <body>
         <div id="root">
-            <header>
-                <section id="headerSection"></section>
+            <!-- <header class="header">
+            <div class="my-container">
+                <h1 class="site-title">
+                <a href="/index.html">Jaisal Mehta</a>
+                </h1>
+                <ul class="horizontal-list">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Section-Files/projects-section.html">Projects</a></li>
+                <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+                <button class="hamburger" onclick="toggleMenu()">☰</button>
+            </div>
+            <nav class="nav-menu" id="mobileMenu">
+                <ul class="vertical-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Section-Files/projects-section.html">Projects</a></li>
+                    <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </nav>
+            </header> -->
+
+            <header class="header">
                 <div class="my-container">
-                    <br>
-                    <h1><center><a href="/index.html", style="text-decoration: none;">Jaisal Mehta</a></center></h1>
-                    <br>
-                    <nav>
+                    <h1 class="site-title">
+                        <a href="/index.html">Jaisal Mehta</a>
+                    </h1>
+                    <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+                    <!-- Desktop Nav -->
+                    <nav class="nav-desktop">
                         <ul class="horizontal-list">
-                            <li><a href="/index.html", style="text-decoration: none;">Home</a></li>
-                            <li><a href="/Section-Files/projects-section.html" style="text-decoration: none">Projects</a></li>
-                            <li><a href="/Section-Files/contact-section.html" style="text-decoration: none">Contact</a></li>
-                            <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" style="text-decoration: none">Resume</a></li>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/Section-Files/projects-section.html">Projects</a></li>
+                            <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
                         </ul>
                     </nav>
                 </div>
+
+                <!-- Mobile Nav -->
+                <nav class="nav-menu" id="mobileMenu">
+                    <ul class="vertical-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Section-Files/projects-section.html">Projects</a></li>
+                    <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
+                    </ul>
+                </nav>
             </header>
-            <br>
-            <div class="hello-card">
-                <div class="hello-container">
-                    <h1>Hello</h1>
-                    <h1>My name is Jaisal Mehta</h1>
-                    <center>
-                    <a href="https://github.com/jmehta228" target="_blank">
-                        <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="hello-section" style="width: 40px; height: 40px;">
-                    </a>
 
-                    <a href="https://www.linkedin.com/in/jaisal-mehta/" target="_blank">
-                        <img src="/Images/LinkedIn-Logo (1).png" alt="LinkedIn Logo" class="hello-section" style="width: 40px; height: 40px;">
-                    </a>
-                    </center>
+            <div class="about-skills-wrapper">
+                <div class="about-card">
+                    <div class="about-container">
+                        <h1>Hello,</h1>
+                        <h1>My name is Jaisal Mehta</h1>
+                        <br>
+                        <p style="font-size: larger;">I am a recent graduate from Indiana University-Bloomington with a:</p>
+                        <ul>
+                            <li style="font-size: larger;">- Bachelors of Science degree in Computer Science</li>
+                            <li style="font-size: larger;">- Minors in:</li>
+                            <ul>
+                                <li style="font-size: larger; list-style-type: disc;">Business</li>
+                                <li style="font-size: larger; list-style-type: disc;">Data Science</li>
+                                <li style="font-size: larger; list-style-type: disc;">Systems Engineering</li>
+                            </ul>
+                        </ul>
+
+                        <br>
+                        <h2>Technical courses taken at Indiana University-Bloomington:</h2>
+                        <ul>
+                            <li style="font-size: larger;">Object Oriented Programming</li>
+                            <br>
+                            <li style="font-size: larger;">Discrete Structures</li>
+                            <br>
+                            <li style="font-size: larger;">Data Structures and Algorithms</li>
+                            <br>
+                            <li style="font-size: larger;">Systems Programming in C & Unix</li>
+                            <br>
+                            <li style="font-size: larger;">iOS Application Development</li>
+                            <br>
+                            <li style="font-size: larger;">Computer Structures</li>
+                            <br>
+                            <li style="font-size: larger;">Advanced Algorithms</li>
+                            <br>
+                            <li style="font-size: larger;">Introduction to Computer Networks</li>
+                            <br>
+                            <li style="font-size: larger;">Modern Computer Architecture</li>
+                            <br>
+                            <li style="font-size: larger;">Introduction to Data Analysis and Mining</li>
+                            <br>
+                            <li style="font-size: larger;">Data Representation</li>
+                            <br>
+                            <li style="font-size: larger;">Introduction to Statistical Inference</li>
+                            <br>
+                            <li style="font-size: larger;">The Computer in Business</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-card">
+                    <div class="skills-container">
+                        <h1>Technical Skills</h1>
+                        <h2>Programming Languages</h2>
+                        <ul>
+                            <li style="font-size:larger">Java</li>
+                            <br>
+                            <li style="font-size:larger">Python</li>
+                            <br>
+                            <li style="font-size:larger">SQL</li>
+                            <br>
+                            <li style="font-size:larger">Swift</li>
+                            <br>
+                            <li style="font-size:larger">C</li>
+                                <br>
+                            <li style="font-size:larger">HTML</li>
+                            <br>
+                            <li style="font-size:larger">CSS</li>
+                            <br>
+                            <li style="font-size:larger">JavaScript</li>
+                            <br>
+                            <li style="font-size:larger">React.js</li>
+                        </ul>
+                        <br>
+                        <h2>Technologies</h2>
+                        <ul>
+                            <li style="font-size:larger">IntelliJ IDEA</li>
+                            <br>
+                            <li style="font-size:larger">PyCharm</li>
+                            <br>
+                            <li style="font-size:larger">Visual Studio Code</li>
+                            <br>
+                            <li style="font-size:larger">Postman</li>
+                            <br>
+                            <li style="font-size:larger">MongoDB</li>
+                            <br>
+                            <li style="font-size:larger">MySQL Workbench</li>
+                            <br>
+                            <li style="font-size:larger">Jupyter Notebook</li>
+                            <br>
+                            <li style="font-size:larger">Spring Boot</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             
-            <div class="about-card">
-                <div class="about-container">
-                    <h1>About Me</h1>
-                    <br>
-                    <p style="font-size: larger;">I am a recent graduate of Indiana University-Bloomington with a Bachelors of Science degree in Computer Science, with Minors in Business, Data Science, and Systems Engineering.</p>
-                    <br>
-                    <h2>Relevant courses taken at Indiana University-Bloomington:</h2>
-                    <ul>
-                        <li style="font-size: larger;">Object Oriented Programming</li>
-                        <br>
-                        <li style="font-size: larger;">Discrete Structures</li>
-                        <br>
-                        <li style="font-size: larger;">Data Structures and Algorithms</li>
-                        <br>
-                        <li style="font-size: larger;">Systems Programming in C & Unix</li>
-                        <br>
-                        <li style="font-size: larger;">iOS Application Development</li>
-                        <br>
-                        <li style="font-size: larger;">Computer Structures</li>
-                        <br>
-                        <li style="font-size: larger;">Advanced Algorithms</li>
-                        <br>
-                        <li style="font-size: larger;">Introduction to Computer Networks</li>
-                        <br>
-                        <li style="font-size: larger;">Modern Computer Architecture</li>
-                        <br>
-                        <li style="font-size: larger;">Introduction to Data Analysis and Mining</li>
-                        <br>
-                        <li style="font-size: larger;">Data Representation</li>
-                        <br>
-                        <li style="font-size: larger;">Introduction to Statistical Inference</li>
-                        <br>
-                        <li style="font-size: larger;">The Computer in Business</li>
-                    </ul>
-                </div>
-            </div>
+            <div class="interests-contact-wrapper">
 
-            <div class="skills-card">
-                <div class="skills-container">
-                    <h1>Technical Skills</h1>
-                    <h2>Programming Languages</h2>
-                    <ul>
-                        <li style="font-size:larger">Java</li>
-                        <br>
-                        <li style="font-size:larger">Python</li>
-                        <br>
-                        <li style="font-size:larger">SQL</li>
-                        <br>
-                        <li style="font-size:larger">Swift</li>
-                        <br>
-                        <li style="font-size:larger">C</li>
-                        <br>
-                        <li style="font-size:larger">HTML</li>
-                        <br>
-                        <li style="font-size:larger">CSS</li>
-                        <br>
-                        <li style="font-size:larger">JavaScript</li>
-                        <br>
-                        <li style="font-size:larger">React.js</li>
-                    </ul>
-                    <br>
-                    <h2>Technologies</h2>
-                    <ul>
-                        <li style="font-size:larger">IntelliJ IDEA</li>
-                        <br>
-                        <li style="font-size:larger">PyCharm</li>
-                        <br>
-                        <li style="font-size:larger">Visual Studio Code</li>
-                        <br>
-                        <li style="font-size:larger">Postman</li>
-                        <br>
-                        <li style="font-size:larger">MongoDB</li>
-                        <br>
-                        <li style="font-size:larger">MySQL Workbench</li>
-                        <br>
-                        <li style="font-size:larger">Jupyter Notebook</li>
-                        <br>
-                        <li style="font-size:larger">Spring Boot</li>
-                    </ul>
+                <div class="interests-card">
+                    <div class="interests-container">
+                        <h1>Interests</h1>
+                        <ul>
+                            <li style="font-size: larger;">Computer Science</li>
+                            <br>
+                            <li style="font-size: larger;">Software Engineering</li>
+                            <br>
+                            <li style="font-size: larger;">Data Science</li>
+                            <br>
+                            <li style="font-size: larger;">Financial Technology</li>
+                            <br>
+                            <li style="font-size: larger;">Quantitative Analysis</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-container">
+                        <h1>Contact</h1>
+                        <div class="contact-buttons">
+                            <a href="mailto:mehtajaisal06@gmail.com" class="contact-btn">Email Me</a>
+                            <a href="tel:+1-847-877-3254" class="contact-btn">Call Me</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="interests-card">
-                <div class="interests-container">
-                    <h1>Interests</h1>
-                    <ul>
-                        <li style="font-size: larger;">Computer Science</li>
-                        <br>
-                        <li style="font-size: larger;">Software Engineering</li>
-                        <br>
-                        <li style="font-size: larger;">Data Science</li>
-                        <br>
-                        <li style="font-size: larger;">Financial Technology</li>
-                        <br>
-                        <li style="font-size: larger;">Quantitative Analysis</li>
-                        <br>
-                        <li style="font-size: larger;">Cars</li>
-                        <br>
-                        <li style="font-size: larger;">Tennis</li>
-                        <br>
-                        <li style="font-size: larger;">Cologne</li>
-                    </ul>
+            <footer style="background-color: rgb(50, 70, 90); padding: 20px 0;">
+                <div class="footer-container">
+                    <nav class="footer-logos">
+                        <a href="https://github.com/jmehta228" target="_blank">
+                            <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="hello-section" style="width: 40px; height: 40px;">
+                        </a>
+                        <a href="https://www.linkedin.com/in/jaisal-mehta/" target="_blank">
+                            <img src="/Images/LinkedIn-Logo (1).png" alt="LinkedIn Logo" class="hello-section" style="width: 40px; height: 40px;">
+                        </a>
+                    </nav>
+                    <p class="footer-title" style="font-size: large;">© Mehta Software Development</p>
                 </div>
-            </div>
-            <br><br><br><br>
+            </footer>
         </div> <!-- ROOT -->
+        <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            nav.classList.toggle('show');
+        }
+        </script>
     </body>
 </html>
