@@ -5,21 +5,18 @@
         <link rel="stylesheet" href="/style.css">
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- added above -->
         <title>JM</title>
-        <link rel="icon" href="apple-touch-icon.png">
+        <link rel="icon" href="/Images/apple-touch-icon.png">
     </head>
 
     <body>
         <div id="root">            
             <header class="header">
-                <div class="my-container">
+                <div class="header-container">
                     <h1 class="site-title">
                         <a href="/index.html">Jaisal Mehta</a>
                     </h1>
                     <button class="hamburger" onclick="toggleMenu()">☰</button>
-
-                    <!-- Desktop Nav -->
                     <nav class="nav-desktop">
                         <ul class="horizontal-list">
                             <li><a href="/index.html">Home</a></li>
@@ -28,8 +25,6 @@
                         </ul>
                     </nav>
                 </div>
-
-                <!-- Mobile Nav -->
                 <nav class="nav-menu" id="mobileMenu">
                     <ul class="vertical-list">
                     <li><a href="/index.html">Home</a></li>
@@ -42,7 +37,7 @@
                 <div style="text-align: center;">
                     <div style="display: inline-block; text-align: left;">
                         <div class="portfolio-card">
-                            <center><h1 class="recent-projects-title", style="font-size: 30px; width: 500px;">Featured Projects</h1></center>
+                            <!-- <center><h1 class="recent-projects-title", style="font-size: 30px; width: 500px;">Featured Projects</h1></center> -->
                             <div class="card-grid">
                                 <div class="task-manager-card">
                                     <div class="task-manager-container">
@@ -145,17 +140,17 @@
                     </div>
                 </div>
             </div>
-            <footer style="background-color: rgb(50, 70, 90); padding: 20px 0;">
+            <footer class="footer">
                 <div class="footer-container">
                     <nav class="footer-logos">
                         <a href="https://github.com/jmehta228" target="_blank">
-                            <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="hello-section" style="width: 40px; height: 40px;">
+                            <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="logo-section" style="width: 40px; height: 40px;">
                         </a>
                         <a href="https://www.linkedin.com/in/jaisal-mehta/" target="_blank">
-                            <img src="/Images/LinkedIn-Logo (1).png" alt="LinkedIn Logo" class="hello-section" style="width: 40px; height: 40px;">
+                            <img src="/Images/LinkedIn-Logo (1).png" alt="LinkedIn Logo" class="logo-section" style="width: 40px; height: 40px;">
                         </a>
                     </nav>
-                    <p class="footer-title" style="font-size: large;">© Mehta Software Development</p>
+                    <p class="footer-title">© 2023 Mehta Software Development. All Rights Reserved.</p>
                 </div>
             </footer>
         </div> <!-- ROOT -->
