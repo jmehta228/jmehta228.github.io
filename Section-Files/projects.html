@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <link rel="icon" href="/Images/apple-touch-icon.png">
+</head>
+
+<body>
+    <div id="root">
+        <!-- Skip Navigation Link for Accessibility -->
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
+        
+        <header class="header">
+            <div class="header-container">
+                <h1 class="site-title">
+                    <a href="/index.html">Jaisal Mehta</a>
+                </h1>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="horizontal-list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/Section-Files/projects.html" aria-current="page">Projects</a></li>
+                        <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                        <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="nav-menu" id="mobileMenu" aria-label="Mobile navigation">
+                <ul class="vertical-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Section-Files/projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                    <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section id="portfolio">
+                <div class="portfolio-container">
+                    <div class="portfolio-content">
+                        <header class="portfolio-header">
+                            <h1 class="page-title">My Projects</h1>
+                            <p class="page-subtitle">A showcase of my technical projects and development work</p>
+                        </header>
+                        
+                        <div class="portfolio-card">
+                            <div class="card-grid">
+                                <article class="project-card task-manager-card">
+                                    <div class="project-container task-manager-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://github.com/jmehta228/Task-Manager-Project" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View Task Manager project on GitHub">
+                                                    Task Manager ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                The Task Manager web application is a full-stack project built using React for the frontend, Java/Spring Boot for the backend, and MongoDB for the database. The web app allows users to register, log in, and manage their personal tasks, including adding, viewing, completing, and deleting tasks. Each user's data is securely stored and isolated, ensuring personalized task tracking. The application is designed with a responsive UI, RESTful API architecture, and secure data handling practices to provide a smooth and intuitive user experience.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Technologies used">
+                                                <span class="tech-tag" role="listitem">Java</span>
+                                                <span class="tech-tag" role="listitem">Spring Boot</span>
+                                                <span class="tech-tag" role="listitem">Rest API</span>
+                                                <span class="tech-tag" role="listitem">React</span>
+                                                <span class="tech-tag" role="listitem">JavaScript</span>
+                                                <span class="tech-tag" role="listitem">CSS</span>
+                                                <span class="tech-tag" role="listitem">MongoDB</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="project-card stock-price-prediction-card">
+                                    <div class="project-container stock-price-prediction-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://github.com/jmehta228/Stock-Price-Prediction/tree/main" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View Stock Price Prediction project on GitHub">
+                                                    Stock Price Prediction ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                This project focuses on predicting stock prices using machine learning techniques, comparing traditional linear regression with deep learning models such as LSTMs. Historical stock data is collected through the yfinance API, preprocessed, and then split into training and testing sets to evaluate model performance. Visualization tools like matplotlib are used to display trends, actual vs. predicted prices, and performance metrics such as MAE and RMSE. The project demonstrates how AI can be applied to time series forecasting and provides insights into the effectiveness of different modeling approaches for financial prediction.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Technologies used">
+                                                <span class="tech-tag" role="listitem">Python</span>
+                                                <span class="tech-tag" role="listitem">Artificial Intelligence</span>
+                                                <span class="tech-tag" role="listitem">Machine Learning</span>
+                                                <span class="tech-tag" role="listitem">Scikit-learn</span>
+                                                <span class="tech-tag" role="listitem">Pandas</span>
+                                                <span class="tech-tag" role="listitem">NumPy</span>
+                                                <span class="tech-tag" role="listitem">TensorFlow</span>
+                                                <span class="tech-tag" role="listitem">yfinance API</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="project-card brain-tumor-classification-card">
+                                    <div class="project-container brain-tumor-classification-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://github.com/jmehta228/Brain-Tumor-Classification" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View Brain Tumor Classification project on GitHub">
+                                                    Brain Tumor Classification ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                This project applies machine learning techniques to classify brain tumors using MRI images. Utilizing a dataset from Kaggle with four tumor categories—glioma, meningioma, pituitary, and no tumor—it involves preprocessing the images (resizing and flattening), then training K-Nearest Neighbors machine learning models. Model performance is evaluated through accuracy, precision, recall, and F1-score, with visual insights provided via confusion matrices and heatmaps.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Technologies used">
+                                                <span class="tech-tag" role="listitem">Python</span>
+                                                <span class="tech-tag" role="listitem">K-NN</span>
+                                                <span class="tech-tag" role="listitem">OpenCV</span>
+                                                <span class="tech-tag" role="listitem">Scikit-learn</span>
+                                                <span class="tech-tag" role="listitem">Jupyter Notebook</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="project-card patient-system-application-card">
+                                    <div class="project-container patient-system-application-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://github.com/jmehta228/Patient_System_Application_V3" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View Patient System Application project on GitHub">
+                                                    Patient System Application ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                This Java-based patient management system uses a Swing GUI and SQL database integration to provide an interactive and efficient platform for handling patient records. Key features include secure login, data validation, advanced search, and full CRUD functionality. The system ensures reliable data storage and retrieval while offering a user-friendly interface. It builds on a previous version by adding a graphical interface, greatly enhancing usability and operational efficiency in healthcare settings.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Technologies used">
+                                                <span class="tech-tag" role="listitem">Java</span>
+                                                <span class="tech-tag" role="listitem">Java Swing</span>
+                                                <span class="tech-tag" role="listitem">SQL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="project-card client-server-chat-application-card">
+                                    <div class="project-container client-server-chat-application-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://github.com/jmehta228/Client-Server-Chat-Application" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View Client Server Chat Application project on GitHub">
+                                                    Client Server Chat Application ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                This program is a simple TCP-based client-server chat application written in C, where a client can connect to a server and exchange messages interactively. The server, implemented in server.c and server.h, initializes a socket, binds to a specified address and port (9001), and waits for client connections. When a client connects, the server enters a message exchange loop, allowing both sides to send messages until either sends "exit" or disconnects. The client, implemented in client.c and client.h, establishes a connection to the server and records both sent and received messages in a transcript.txt file. The program handles socket creation, connection management, message exchange, and cleanup, making it a straightforward example of TCP communication between a client and server.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Technologies used">
+                                                <span class="tech-tag" role="listitem">C</span>
+                                                <span class="tech-tag" role="listitem">Unix</span>
+                                                <span class="tech-tag" role="listitem">TCP/IP</span>
+                                                <span class="tech-tag" role="listitem">Sockets</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="project-card simple-data-pipeline-card">
+                                    <div class="project-container simple-data-pipeline-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://github.com/jmehta228/Simple-Data-Pipeline" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View Simple Data Pipeline project on GitHub">
+                                                    Simple Data Pipeline ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                The Python program retrieves real-time weather data from the WeatherAPI, processes it, and stores it in a MySQL database using an ETL (Extract, Transform, Load) approach. First, the getAPIResponse function extracts data by sending a GET request to the API, returning the JSON response if successful. Next, getAPIInfo transforms this JSON data by parsing and organizing relevant information (such as local time, location, temperature, and wind speed) into a list format. Finally, the transferToDatabase function loads the transformed data into a MySQL database named "WeatherData" by executing an SQL insert command. The main function integrates these steps, constructs the API URL, and prompts the user for a city or zipcode to retrieve weather data. The Python program is modular, with clear separation of the ETL stages, enabling efficient data processing and easy maintenance.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Technologies used">
+                                                <span class="tech-tag" role="listitem">Python</span>
+                                                <span class="tech-tag" role="listitem">Rest API</span>
+                                                <span class="tech-tag" role="listitem">SQL</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="project-card animal-scrap-book-card">
+                                    <div class="project-container animal-scrap-book-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://github.com/jmehta228/AnimalScrapBook" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View Animal ScrapBook project on GitHub">
+                                                    Animal ScrapBook ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                To shortly describe the application for the final project for iOS App Development, my partner and I essentially wanted to create an animal scrapbook app. The basis of this app will implement an apple developer provided createML model which will use the dataset to essentially classify an animal somebody takes a picture of in our app. The animal will then be recorded in an archive, also including how many times that certain animal has been captured. The app implements UIIMagePicker to classify whatever animal you take a picture of. The app will also implement notifications to remind the user to get on the app and do their daily animal finding. The goal of this app is to have the user collect animals and learn about ones they don't know about in a digital way.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Technologies used">
+                                                <span class="tech-tag" role="listitem">Swift</span>
+                                                <span class="tech-tag" role="listitem">UIKit</span>
+                                                <span class="tech-tag" role="listitem">CreateML</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <nav class="footer-logos" aria-label="Social media links">
+                    <a href="https://github.com/jmehta228" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's GitHub profile">
+                        <img src="/Images/Github-Logo (1).png" 
+                             alt="GitHub" 
+                             class="logo-section"
+                             width="40" 
+                             height="40">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaisal-mehta/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's LinkedIn profile">
+                        <img src="/Images/LinkedIn-Logo (1).png" 
+                             alt="LinkedIn" 
+                             class="logo-section"
+                             width="44" 
+                             height="44">
+                    </a>
+                </nav>
+                <p class="footer-title">© 2024 Mehta Software Development. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const isExpanded = nav.classList.contains('show');
+            
+            nav.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        // Enhanced keyboard support and accessibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            
+            hamburger.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleMenu();
+                }
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                const nav = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                
+                if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            // Close mobile menu on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    const nav = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

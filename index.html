@@ -1,88 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <link rel="stylesheet" href="style.css">
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>JM</title>
-        <link rel="icon" href="/Images/apple-touch-icon.png">
-    </head>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jaisal Mehta">
+    <title>Home</title>
+    <link rel="icon" href="/Images/apple-touch-icon.png">
+</head>
 
-    <body>
-        <div id="root">
-            <header class="header">
-                <div class="header-container">
-                    <h1 class="site-title">
-                        <a href="/index.html">Jaisal Mehta</a>
-                    </h1>
-                    <button class="hamburger" onclick="toggleMenu()">☰</button>
-                    <nav class="nav-desktop">
-                        <ul class="horizontal-list">
-                            <li><a href="/index.html">Home</a></li>
-                            <li><a href="/Section-Files/projects-section.html">Projects</a></li>
-                            <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <nav class="nav-menu" id="mobileMenu">
-                    <ul class="vertical-list">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/Section-Files/projects-section.html">Projects</a></li>
-                    <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank">Resume</a></li>
+<body>
+    <div id="root">
+        <!-- Skip Navigation Link for Accessibility -->
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
+        
+        <header class="header">
+            <div class="header-container">
+                <h1 class="site-title">
+                    <a href="/index.html">Jaisal Mehta</a>
+                </h1>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="horizontal-list">
+                        <li><a href="/index.html" aria-current="page">Home</a></li>
+                        <li><a href="/Section-Files/projects.html">Projects</a></li>
+                        <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                        <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
                     </ul>
                 </nav>
-            </header>
-            <div class="intro-skills-wrapper">
-                
-                <div class="intro-card">
-                    <div class="intro-container">
-                        <center><img class="profile-picture" src="Images/picture.png" alt="profile-picture" style="width: 200px; height: 212px; align-items: center; border-radius: 50%;"></center>
-                        <center><h1 class="intro-header">Jaisal Mehta</h1></center>
-                        <center><p>I am a recent graduate from Indiana University-Bloomington, with a B.S. Degree in Computer Science and minors in Business, Data Science, and Systems Engineering.</p></center>
-                    </div>
-                </div>
+            </div>
+            <nav class="nav-menu" id="mobileMenu" aria-label="Mobile navigation">
+                <ul class="vertical-list">
+                    <li><a href="/index.html" aria-current="page">Home</a></li>
+                    <li><a href="/Section-Files/projects.html">Projects</a></li>
+                    <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                    <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
 
-                <div class="skills-card">
+        <main id="main-content">
+            <div class="intro-skills-wrapper">
+                <section class="intro-card">
+                    <div class="intro-container">
+                        <div class="profile-section">
+                            <img class="profile-picture" 
+                                 src="Images/picture.png" 
+                                 alt="Professional headshot of Jaisal Mehta"
+                                 width="200" 
+                                 height="212">
+                        </div>
+                        <div class="intro-content">
+                            <h1 class="intro-header">Jaisal Mehta</h1>
+                            <p class="intro-description">
+                                I am a recent graduate from Indiana University-Bloomington, with a B.S. Degree in Computer Science and minors in Business, Data Science, and Systems Engineering.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills-card">
                     <div class="skills-container">
-                        <center><h2>Programming Languages</h2>
-                        <p>Java, Python, SQL, Swift, C, HTML, CSS, JavaScript</p>
-                        <h2>Technologies & Tools</h2>
-                        <p>IntelliJ IDEA, PyCharm, Visual Studio Code, Postman, Git, GitHub, MongoDB, MySQL Workbench, Jupyter Notebook, Spring Boot, React.js</p>
-                        <h2>Interests</h2>
-                        <p>Computer Science, Software Engineering, Data Science, Quantitative Research/Development, Financial Technology, Healthcare Technology</p></center>
+                        <div class="skills-content">
+                            <div class="skills-section">
+                                <h2 class="skills-title">Programming Languages</h2>
+                                <p class="skills-list">Java, Python, SQL, Swift, C, HTML, CSS, JavaScript</p>
+                            </div>
+                            
+                            <div class="skills-section">
+                                <h2 class="skills-title">Technologies & Tools</h2>
+                                <p class="skills-list">IntelliJ IDEA, PyCharm, Visual Studio Code, Postman, Git, GitHub, MongoDB, MySQL Workbench, Jupyter Notebook, Spring Boot, React.js</p>
+                            </div>
+                            
+                            <div class="skills-section">
+                                <h2 class="skills-title">Interests</h2>
+                                <p class="skills-list">Computer Science, Software Engineering, Data Science, Quantitative Research/Development, Financial Technology, Healthcare Technology</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </section>
             </div>
-            <div class="contact-card">
+
+            <section class="contact-card">
                 <div class="contact-container">
-                    <h1>Contact</h1>
-                    <center><p>Feel free to contact me if you have any questions or would like to collaborate on a project!</p></center>
-                    <div class="contact-buttons">
-                        <a href="mailto:mehtajaisal05@gmail.com" class="contact-btn">Email Me</a>
-                        <a href="tel:+1-847-877-3254" class="contact-btn">Call Me</a>
+                    <h2 class="contact-title">Contact</h2>
+                    <div class="contact-content">
+                        <p class="contact-description">
+                            Feel free to contact me if you have any questions or would like to collaborate on a project!
+                        </p>
+                        <div class="contact-buttons">
+                            <a href="mailto:mehtajaisal05@gmail.com"
+                               class="contact-btn"
+                               aria-label="Send email to Jaisal Mehta">
+                                Email Me
+                            </a>
+                            <a href="tel:+1-847-877-3254"
+                               class="contact-btn"
+                               aria-label="Call Jaisal Mehta">
+                                Call Me
+                            </a>
+                        </div>
                     </div>
                 </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <nav class="footer-logos" aria-label="Social media links">
+                    <a href="https://github.com/jmehta228" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's GitHub profile">
+                        <img src="/Images/Github-Logo (1).png" 
+                             alt="GitHub" 
+                             class="logo-section"
+                             width="40" 
+                             height="40">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaisal-mehta/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's LinkedIn profile">
+                        <img src="/Images/LinkedIn-Logo (1).png" 
+                             alt="LinkedIn" 
+                             class="logo-section"
+                             width="44" 
+                             height="44">
+                    </a>
+                </nav>
+                <p class="footer-title">© 2024 Mehta Software Development. All Rights Reserved.</p>
             </div>
-            <footer class="footer">
-                <div class="footer-container">
-                    <nav class="footer-logos">
-                        <a href="https://github.com/jmehta228" target="_blank">
-                            <img src="/Images/Github-Logo (1).png" alt="GitHub Logo" class="logo-section" style="width: 40px; height: 40px;">
-                        </a>
-                        <a href="https://www.linkedin.com/in/jaisal-mehta/" target="_blank">
-                            <img src="/Images/LinkedIn-Logo (1).png" alt="LinkedIn Logo" class="logo-section" style="width: 44px; height: 44px;">
-                        </a>
-                    </nav>
-                    <p class="footer-title">© 2023 Mehta Software Development. All Rights Reserved.</p>
-                </div>
-            </footer>
-        </div> <!-- ROOT -->
-        <script>
+        </footer>
+    </div>
+
+    <script>
         function toggleMenu() {
             const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const isExpanded = nav.classList.contains('show');
+            
             nav.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', !isExpanded);
         }
-        </script>
-    </body>
+
+        // Enhanced keyboard support
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            
+            hamburger.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleMenu();
+                }
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                const nav = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                
+                if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
 </html>

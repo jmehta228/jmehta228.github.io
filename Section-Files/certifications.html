@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View Jaisal Mehta's professional certifications in cloud computing, software development, and technology.">
+    <title>Certifications</title>
+    <link rel="icon" href="/Images/apple-touch-icon.png">
+</head>
+
+<body>
+    <div id="root">
+        <!-- Skip Navigation Link for Accessibility -->
+        <a href="#main-content" class="skip-nav">Skip to main content</a>
+        
+        <header class="header">
+            <div class="header-container">
+                <h1 class="site-title">
+                    <a href="/index.html">Jaisal Mehta</a>
+                </h1>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="horizontal-list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/Section-Files/projects.html">Projects</a></li>
+                        <li><a href="/Section-Files/certifications.html" aria-current="page">Certifications</a></li>
+                        <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="nav-menu" id="mobileMenu" aria-label="Mobile navigation">
+                <ul class="vertical-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Section-Files/projects.html">Projects</a></li>
+                    <li><a href="/Section-Files/certifications.html" aria-current="page">Certifications</a></li>
+                    <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section id="certifications">
+                <div class="portfolio-container">
+                    <div class="portfolio-content">
+                        <header class="portfolio-header">
+                            <h1 class="page-title">My Certifications</h1>
+                            <p class="page-subtitle">Professional certifications and achievements in technology</p>
+                        </header>
+                        
+                        <div class="certification-card">
+                            <div class="card-grid">
+                                <article class="project-card certification-item">
+                                    <div class="project-container certification-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <a href="https://www.credly.com/badges/acd76657-3886-49b9-b617-56a5d040dc83/public_url" 
+                                                   target="_blank" 
+                                                   rel="noopener noreferrer"
+                                                   aria-label="View AWS Educate Introduction to Cloud 101 certification on Credly">
+                                                    AWS Educate Introduction to Cloud 101 ⬈
+                                                </a>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                Completed AWS Educate's foundational cloud computing course, covering core AWS services, cloud concepts, and best practices. This certification demonstrates understanding of cloud fundamentals including compute, storage, networking, and database services within the AWS ecosystem. Gained hands-on experience with key AWS services and learned about cloud architecture principles and deployment strategies.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Skills gained">
+                                                <span class="tech-tag" role="listitem">AWS Cloud</span>
+                                                <span class="tech-tag" role="listitem">Cloud Computing</span>
+                                                <span class="tech-tag" role="listitem">EC2</span>
+                                                <span class="tech-tag" role="listitem">S3</span>
+                                                <span class="tech-tag" role="listitem">Cloud Architecture</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Placeholder for additional certifications -->
+                                <article class="project-card certification-item placeholder-cert">
+                                    <div class="project-container certification-container">
+                                        <header class="project-header">
+                                            <h2 class="project-title">
+                                                <span class="coming-soon">More Certifications Coming Soon</span>
+                                            </h2>
+                                        </header>
+                                        <div class="project-content">
+                                            <p class="project-description">
+                                                Currently pursuing additional certifications in cloud computing, software development, artificial intelligence, machine learning, and other technologies. Stay tuned for updates as I continue expanding my professional credentials and expertise.
+                                            </p>
+                                            <div class="tech-list" role="list" aria-label="Future certification areas">
+                                                <span class="tech-tag future-cert" role="listitem">AWS Cloud Practitioner</span>
+                                                <span class="tech-tag future-cert" role="listitem">AWS AI Practitioner</span>
+                                                <span class="tech-tag future-cert" role="listitem">AI/ML Certifications</span>
+                                                <span class="tech-tag future-cert" role="listitem">CompTIA A+</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <nav class="footer-logos" aria-label="Social media links">
+                    <a href="https://github.com/jmehta228" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's GitHub profile">
+                        <img src="/Images/Github-Logo (1).png" 
+                             alt="GitHub" 
+                             class="logo-section"
+                             width="40" 
+                             height="40">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaisal-mehta/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's LinkedIn profile">
+                        <img src="/Images/LinkedIn-Logo (1).png" 
+                             alt="LinkedIn" 
+                             class="logo-section"
+                             width="40" 
+                             height="40">
+                    </a>
+                </nav>
+                <p class="footer-title">© 2024 Mehta Software Development. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const isExpanded = nav.classList.contains('show');
+            
+            nav.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        // Enhanced keyboard support and accessibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            
+            hamburger.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleMenu();
+                }
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                const nav = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                
+                if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            // Close mobile menu on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    const nav = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
