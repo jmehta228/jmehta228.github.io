@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="icon" href="/Images/apple-touch-icon.png">
+</head>
+
+<body>
+    <div id="root">        
+        <header class="header">
+            <div class="header-container">
+                <h1 class="site-title">
+                    <a href="/index.html">Jaisal Mehta</a>
+                </h1>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="horizontal-list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/Section-Files/projects.html">Projects</a></li>
+                        <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                        <li><a href="/Section-Files/resume.html" aria-current="page">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="nav-menu" id="mobileMenu" aria-label="Mobile navigation">
+                <ul class="vertical-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Section-Files/projects.html">Projects</a></li>
+                    <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                    <li><a href="/Section-Files/resume.html" aria-current="page">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section id="resume">
+                <div class="portfolio-container">
+                    <div class="portfolio-content">
+                        <header class="portfolio-header">
+                            <h1 class="page-title">Resume</h1>
+                            <p class="page-subtitle">B.S. in Computer Science | Aspiring Software Engineer</p>
+                            <div class="resume-download">
+                                <a href="/Resume/Jaisal-Mehta-Resume.pdf" 
+                                   target="_blank"
+                                   class="resume-download-btn"
+                                   aria-label="Download Jaisal Mehta's Resume PDF">
+                                    Download Resume (PDF)
+                                </a>
+                            </div>
+                        </header>
+                        
+                        <div class="resume-card">
+                            <div class="resume-grid">
+                                <!-- Education Section -->
+                                <article class="resume-section">
+                                    <div class="resume-container">
+                                        <header class="resume-header">
+                                            <h2 class="resume-title">Education</h2>
+                                        </header>
+                                        <div class="resume-content">
+                                            <div class="resume-item">
+                                                <h3 class="resume-item-title">Bachelor of Science in Computer Science</h3>
+                                                <p class="resume-item-subtitle">Indiana University - Bloomington</p>
+                                                <p class="resume-item-date">Graduated 2024</p>
+                                                <div class="resume-item-details">
+                                                    <p><strong>Minors:</strong> Business, Data Science, Systems Engineering</p>
+                                                    <p><strong>Relevant Coursework:</strong> Object Oriented Programming, Discrete Structures, Data Structures and Algorithms, 
+                                                        Systems Programming in Unix, iOS Application Development, Computer Structures, Advanced Algorithms, Introduction to Computer Networks, 
+                                                        Introduction to Data Analysis and Mining, Data Representation, Introduction to Statistical Inference, The Computer in Business</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Technical Skills Section -->
+                                <article class="resume-section">
+                                    <div class="resume-container">
+                                        <header class="resume-header">
+                                            <h2 class="resume-title">Technical Skills</h2>
+                                        </header>
+                                        <div class="resume-content">
+                                            <div class="skills-grid">
+                                                <div class="skill-category">
+                                                    <h3 class="skill-category-title">Programming Languages</h3>
+                                                    <div class="tech-list">
+                                                        <span class="tech-tag">Java</span>
+                                                        <span class="tech-tag">Python</span>
+                                                        <span class="tech-tag">SQL</span>
+                                                        <span class="tech-tag">Swift</span>
+                                                        <span class="tech-tag">C</span>
+                                                        <span class="tech-tag">HTML</span>
+                                                        <span class="tech-tag">CSS</span>
+                                                        <span class="tech-tag">JavaScript</span>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-category">
+                                                    <h3 class="skill-category-title">Technologies & Frameworks</h3>
+                                                    <div class="tech-list">
+                                                        <span class="tech-tag">Spring Boot</span>
+                                                        <span class="tech-tag">React.js</span>
+                                                        <span class="tech-tag">REST API</span>
+                                                        <span class="tech-tag">MongoDB</span>
+                                                        <span class="tech-tag">MySQL</span>
+                                                        <span class="tech-tag">Git</span>
+                                                        <span class="tech-tag">GitHub</span>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-category">
+                                                    <h3 class="skill-category-title">Tools & Platforms</h3>
+                                                    <div class="tech-list">
+                                                        <span class="tech-tag">IntelliJ IDEA</span>
+                                                        <span class="tech-tag">PyCharm</span>
+                                                        <span class="tech-tag">Visual Studio Code</span>
+                                                        <span class="tech-tag">Postman</span>
+                                                        <span class="tech-tag">Jupyter Notebook</span>
+                                                        <span class="tech-tag">MySQL Workbench</span>
+                                                    </div>
+                                                </div>
+                                                <div class="skill-category">
+                                                    <h3 class="skill-category-title">Specializations</h3>
+                                                    <div class="tech-list">
+                                                        <span class="tech-tag">Machine Learning</span>
+                                                        <span class="tech-tag">Artificial Intelligence</span>
+                                                        <span class="tech-tag">Data Science</span>
+                                                        <span class="tech-tag">Full-Stack Development</span>
+                                                        <span class="tech-tag">Cloud Computing</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Projects Highlights Section -->
+                                <article class="resume-section">
+                                    <div class="resume-container">
+                                        <header class="resume-header">
+                                            <h2 class="resume-title">Featured Projects</h2>
+                                        </header>
+                                        <div class="resume-content">
+                                            <div class="resume-item">
+                                                <h3 class="resume-item-title">
+                                                    <a href="https://github.com/jmehta228/Task-Manager-Project" 
+                                                       target="_blank" 
+                                                       rel="noopener noreferrer">
+                                                        Task Manager Web Application ⬈
+                                                    </a>
+                                                </h3>
+                                                <div class="tech-list">
+                                                    <span class="tech-tag">Java</span>
+                                                    <span class="tech-tag">Spring Boot</span>
+                                                    <span class="tech-tag">React</span>
+                                                    <span class="tech-tag">MongoDB</span>
+                                                </div>
+                                                <p class="resume-item-description">Full-stack web application with user authentication, CRUD operations, and RESTful API architecture for personal task management</p>
+                                            </div>
+                                            <div class="resume-item">
+                                                <h3 class="resume-item-title">
+                                                    <a href="https://github.com/jmehta228/Stock-Price-Prediction/tree/main" 
+                                                       target="_blank" 
+                                                       rel="noopener noreferrer">
+                                                        Stock Price Prediction System ⬈
+                                                    </a>
+                                                </h3>
+                                                <div class="tech-list">
+                                                    <span class="tech-tag">Python</span>
+                                                    <span class="tech-tag">Machine Learning</span>
+                                                    <span class="tech-tag">TensorFlow</span>
+                                                    <span class="tech-tag">LSTM</span>
+                                                </div>
+                                                <p class="resume-item-description">AI-powered financial forecasting system comparing linear regression and LSTM deep learning models with yfinance API integration</p>
+                                            </div>
+                                            <div class="resume-item">
+                                                <h3 class="resume-item-title">
+                                                    <a href="https://github.com/jmehta228/Brain-Tumor-Classification" 
+                                                       target="_blank" 
+                                                       rel="noopener noreferrer">
+                                                        Brain Tumor Classification ⬈
+                                                    </a>
+                                                </h3>
+                                                <div class="tech-list">
+                                                    <span class="tech-tag">Python</span>
+                                                    <span class="tech-tag">K-NN</span>
+                                                    <span class="tech-tag">OpenCV</span>
+                                                    <span class="tech-tag">Scikit-learn</span>
+                                                </div>
+                                                <p class="resume-item-description">Medical imaging classification system using machine learning to identify brain tumor types from MRI scans with 4-category classification</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Certifications Section -->
+                                <article class="resume-section">
+                                    <div class="resume-container">
+                                        <header class="resume-header">
+                                            <h2 class="resume-title">Certifications</h2>
+                                        </header>
+                                        <div class="resume-content">
+                                            <div class="resume-item">
+                                                <h3 class="resume-item-title">
+                                                    <a href="https://www.credly.com/badges/acd76657-3886-49b9-b617-56a5d040dc83/public_url" 
+                                                       target="_blank" 
+                                                       rel="noopener noreferrer">
+                                                        AWS Educate Introduction to Cloud 101 ⬈
+                                                    </a>
+                                                </h3>
+                                                <p class="resume-item-description">Foundational cloud computing certification covering AWS services, cloud architecture, and deployment strategies</p>
+                                                <div class="tech-list">
+                                                    <span class="tech-tag">AWS Cloud</span>
+                                                    <span class="tech-tag">EC2</span>
+                                                    <span class="tech-tag">S3</span>
+                                                    <span class="tech-tag">Cloud Architecture</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Professional Interests Section -->
+                                <article class="resume-section">
+                                    <div class="resume-container">
+                                        <header class="resume-header">
+                                            <h2 class="resume-title">Professional Interests</h2>
+                                        </header>
+                                        <div class="resume-content">
+                                            <div class="tech-list">
+                                                <span class="tech-tag">Software Engineering</span>
+                                                <span class="tech-tag">Data Science</span>
+                                                <span class="tech-tag">Quantitative Research</span>
+                                                <span class="tech-tag">Financial Technology</span>
+                                                <span class="tech-tag">Healthcare Technology</span>
+                                                <span class="tech-tag">Machine Learning</span>
+                                                <span class="tech-tag">Cloud Computing</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <!-- Contact Section -->
+                                <article class="resume-section">
+                                    <div class="resume-container">
+                                        <header class="resume-header">
+                                            <h2 class="resume-title">Contact Information</h2>
+                                        </header>
+                                        <div class="resume-content">
+                                            <div class="contact-info-grid">
+                                                <div class="contact-item">
+                                                    <strong>Email:</strong>
+                                                    <a href="mailto:mehtajaisal05@gmail.com">mehtajaisal05@gmail.com</a>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <strong>Phone:</strong>
+                                                    <a href="tel:+1-847-877-3254">+1 (847) 877-3254</a>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <strong>LinkedIn:</strong>
+                                                    <a href="https://www.linkedin.com/in/jaisal-mehta/" 
+                                                       target="_blank" 
+                                                       rel="noopener noreferrer">linkedin.com/in/jaisal-mehta</a>
+                                                </div>
+                                                <div class="contact-item">
+                                                    <strong>GitHub:</strong>
+                                                    <a href="https://github.com/jmehta228" 
+                                                       target="_blank" 
+                                                       rel="noopener noreferrer">github.com/jmehta228</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <nav class="footer-logos" aria-label="Social media links">
+                    <a href="https://github.com/jmehta228" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's GitHub profile">
+                        <img src="/Images/Github-Logo (1).png" 
+                             alt="GitHub" 
+                             class="logo-section"
+                             width="40" 
+                             height="40">
+                    </a>
+                    <a href="https://www.linkedin.com/in/jaisal-mehta/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       aria-label="Visit Jaisal's LinkedIn profile">
+                        <img src="/Images/LinkedIn-Logo (1).png" 
+                             alt="LinkedIn" 
+                             class="logo-section"
+                             width="44" 
+                             height="44">
+                    </a>
+                </nav>
+                <p class="footer-title">© 2024 Mehta Software Development. All Rights Reserved.</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const isExpanded = nav.classList.contains('show');
+            
+            nav.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        // Enhanced keyboard support and accessibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+            
+            hamburger.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    toggleMenu();
+                }
+            });
+            
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                const nav = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+                
+                if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+            
+            // Close mobile menu on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    const nav = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
