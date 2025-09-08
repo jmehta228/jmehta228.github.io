@@ -756,7 +756,7 @@ button:focus {
 
     /* Colors */
     --color-primary-bg: rgb(2, 20, 35);
-    --color-secondary-bg: rgba(0, 34, 41, 0.5);
+    --color-secondary-bg: rgba(0, 42, 57, 0.5);
     --color-card-bg: #1e2a38;
     --color-accent-bg: #00274b;
     --color-text-primary: white;
