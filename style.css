@@ -31,9 +31,9 @@ main {
     z-index: 999;
     box-shadow: var(--shadow-header);
 
-    background-color: rgba(0, 40, 60, 0.6);
+    /* background-color: rgba(0, 40, 60, 0.6); */
     backdrop-filter: blur(8px);
-    -webkit-backdrop-filter: blur(8px); /* Safari support */
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .header-container {
@@ -755,9 +755,8 @@ button:focus {
     --section-gutter: 24px;    /* horizontal padding (adjust to taste) */
 
     /* Colors */
-    /* --color-primary-bg: rgb(0, 30, 50); */
     --color-primary-bg: rgb(2, 20, 35);
-    --color-secondary-bg: rgb(50, 70, 90); /* rgba(0, 40, 60, 0.6); */
+    --color-secondary-bg: rgba(0, 34, 41, 0.5);
     --color-card-bg: #1e2a38;
     --color-accent-bg: #00274b;
     --color-text-primary: white;
