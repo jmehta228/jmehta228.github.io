@@ -32,6 +32,7 @@ main {
     box-shadow: var(--shadow-header);
 
     /* background-color: rgba(0, 40, 60, 0.6); */
+
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
