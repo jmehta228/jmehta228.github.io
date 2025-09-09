@@ -126,15 +126,14 @@ main {
 
 .nav-menu {
     display: none;
-    background-color: var(--color-secondary-bg);
+    /* background-color: rgba(0, 11, 33, 0.182); */
     width: 100%;
-
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
 }
 
 .nav-menu.show {
-    display: block;
+    display: contents;
 }
 
 .vertical-list {
@@ -186,7 +185,7 @@ main {
     padding: var(--spacing-lg);
     color: var(--color-text-secondary);
     border-radius: var(--border-radius);
-    background-color: var(--color-card-bg);
+    /* background-color: var(--color-card-bg); */
 }
 
 .intro-card {
@@ -271,7 +270,7 @@ main {
     border-radius: var(--border-radius);
     padding-block: var(--spacing-lg);
     padding-inline: var(--section-gutter);
-    background-color: var(--color-card-bg);
+    /* background-color: var(--color-card-bg); */
     text-align: center;
 }
 
