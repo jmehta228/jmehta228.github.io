@@ -413,6 +413,30 @@ main {
     outline-offset: 4px;
 }
 
+.credly-profile {
+    margin: 0 0 var(--spacing-sm) 0;
+    text-align: center;
+}
+
+.credly-profile a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    transition: color var(--transition-normal);
+    display: inline-block;
+    font-size: 20px;
+}
+
+.credly-profile a:hover,
+.credly-profile a:focus {
+    color: var(--color-hover);
+    text-decoration: underline;
+    outline: 2px solid var(--color-text-accent);
+    outline-offset: 4px;
+}
+
+
 .project-content {
     flex: 1;
     display: flex;
@@ -631,6 +655,10 @@ button:focus {
     }
 
     .project-title a {
+        font-size: var(--font-size-xl);
+    }
+
+    .credly-profile a {
         font-size: var(--font-size-xl);
     }
 
