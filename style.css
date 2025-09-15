@@ -419,7 +419,7 @@ main {
 }
 
 .credly-profile a {
-    color: var(--color-text-primary);
+    color: var(--color-text-accent);
     text-decoration: none;
     font-size: var(--font-size-2xl);
     font-weight: 600;
