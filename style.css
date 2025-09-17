@@ -1250,3 +1250,30 @@ body {
         color: #333 !important;
     }
 }
+
+
+
+/* One card per row */
+.resume-grid {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    max-width: 900px;   /* optional: keeps it readable */
+    margin: 0 auto;     /* centers the column */
+}
+
+.resume-section {
+    width: 100%;
+}
+
+.resume-download {
+    display: flex;
+    justify-content: center;  /* centers horizontally */
+    margin-top: 5rem;         /* space below the subtitle */
+}
+
+.resume-download-btn {
+    width: 400px;  /* pick the size you like */
+    height: 30px;  /* adjust height too if needed */
+    font-size: larger;
+}
