@@ -2,15 +2,18 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jaisal Mehta</title>
+    <meta name="description" content="Jaisal Mehta - Computer Science graduate specializing in software engineering, data science, and full-stack development">
+    <title>Jaisal Mehta - Software Engineer</title>
     <link rel="icon" href="/Images/apple-touch-icon.png">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div id="root">        
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <div id="root">
         <header class="header">
             <div class="header-container">
                 <h1 class="site-title">
@@ -24,8 +27,7 @@
                         <li><a href="/index.html" aria-current="page">Home</a></li>
                         <li><a href="/Section-Files/projects.html">Projects</a></li>
                         <li><a href="/Section-Files/certifications.html">Certifications</a></li>
-                        <li><a href="/Section-Files/resume.html" rel="noopener noreferrer">Resume</a></li>
-                        <!-- <li><a href="/Resume/Jaisal-Mehta-Resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a></li> -->
+                        <li><a href="/Section-Files/resume.html">Resume</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,59 +36,56 @@
                     <li><a href="/index.html" aria-current="page">Home</a></li>
                     <li><a href="/Section-Files/projects.html">Projects</a></li>
                     <li><a href="/Section-Files/certifications.html">Certifications</a></li>
-                    <li><a href="/Section-Files/resume.html" rel="noopener noreferrer">Resume</a></li>
+                    <li><a href="/Section-Files/resume.html">Resume</a></li>
                 </ul>
             </nav>
         </header>
 
         <main id="main-content">
             <div class="intro-skills-wrapper">
-                <section class="intro-card">
+                <section class="intro-card" aria-labelledby="intro-heading">
                     <div class="intro-container">
                         <div class="profile-section">
-                            <img class="profile-picture" 
-                                 src="Images/picture.png" 
+                            <img class="profile-picture"
+                                 src="Images/picture.png"
                                  alt="Professional headshot of Jaisal Mehta"
-                                 width="200" 
+                                 width="200"
                                  height="212">
                         </div>
                         <div class="intro-content">
-                            <h1 class="intro-header">Jaisal Mehta</h1>
-                            <p class="intro-description" style="font-size: medium;">
+                            <h2 class="intro-header" id="intro-heading">Jaisal Mehta</h2>
+                            <p class="intro-description">
                                 I am a recent graduate from Indiana University-Bloomington, with a B.S. Degree in Computer Science and minors in Business, Data Science, and Systems Engineering.
                             </p>
                         </div>
                     </div>
                 </section>
 
-                <section class="skills-card">
+                <section class="skills-card" aria-labelledby="skills-heading">
                     <div class="skills-container">
                         <div class="skills-content">
                             <div class="skills-section">
                                 <h2 class="skills-title">Programming Languages</h2>
                                 <p class="skills-list">Java, Python, SQL, Swift, C, HTML, CSS, JavaScript</p>
-                                <br>
                             </div>
-                            
+
                             <div class="skills-section">
                                 <h2 class="skills-title">Technologies & Tools</h2>
                                 <p class="skills-list">IntelliJ IDEA, PyCharm, Visual Studio Code, Postman, Git, GitHub, MongoDB, MySQL Workbench, Jupyter Notebook, Spring Boot, React.js</p>
-                                <br>
                             </div>
-                            
+
                             <div class="skills-section">
                                 <h2 class="skills-title">Interests</h2>
                                 <p class="skills-list">Computer Science, Software Engineering, Data Science, Quantitative Research/Development, Financial Technology, Healthcare Technology</p>
-                                <br>
                             </div>
                         </div>
                     </div>
                 </section>
             </div>
 
-            <section class="contact-card">
+            <section class="contact-card" aria-labelledby="contact-heading">
                 <div class="contact-container">
-                    <h2 class="contact-title">Contact</h2>
+                    <h2 class="contact-title" id="contact-heading">Contact</h2>
                     <div class="contact-content">
                         <p class="contact-description">
                             Feel free to contact me if you have any questions or would like to collaborate on a project!
@@ -111,24 +110,24 @@
         <footer class="footer">
             <div class="footer-container">
                 <nav class="footer-logos" aria-label="Social media links">
-                    <a href="https://github.com/jmehta228" 
-                       target="_blank" 
+                    <a href="https://github.com/jmehta228"
+                       target="_blank"
                        rel="noopener noreferrer"
                        aria-label="Visit Jaisal's GitHub profile">
-                        <img src="/Images/Github-Logo (1).png" 
-                             alt="GitHub" 
+                        <img src="/Images/Github-Logo (1).png"
+                             alt="GitHub"
                              class="logo-section"
-                             width="40" 
+                             width="40"
                              height="40">
                     </a>
-                    <a href="https://www.linkedin.com/in/jaisal-mehta/" 
-                       target="_blank" 
+                    <a href="https://www.linkedin.com/in/jaisal-mehta/"
+                       target="_blank"
                        rel="noopener noreferrer"
                        aria-label="Visit Jaisal's LinkedIn profile">
-                        <img src="/Images/LinkedIn-Logo (1).png" 
-                             alt="LinkedIn" 
+                        <img src="/Images/LinkedIn-Logo (1).png"
+                             alt="LinkedIn"
                              class="logo-section"
-                             width="44" 
+                             width="44"
                              height="44">
                     </a>
                 </nav>
@@ -142,30 +141,44 @@
             const nav = document.querySelector('.nav-menu');
             const hamburger = document.querySelector('.hamburger');
             const isExpanded = nav.classList.contains('show');
-            
+
             nav.classList.toggle('show');
             hamburger.setAttribute('aria-expanded', !isExpanded);
         }
 
-        // Enhanced keyboard support
+        // Enhanced keyboard support and accessibility
         document.addEventListener('DOMContentLoaded', function() {
             const hamburger = document.querySelector('.hamburger');
-            
-            hamburger.addEventListener('keydown', function(e) {
-                if (e.key === 'Enter' || e.key === ' ') {
-                    e.preventDefault();
-                    toggleMenu();
-                }
-            });
-            
+
+            if (hamburger) {
+                hamburger.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleMenu();
+                    }
+                });
+            }
+
             // Close mobile menu when clicking outside
             document.addEventListener('click', function(e) {
                 const nav = document.querySelector('.nav-menu');
                 const hamburger = document.querySelector('.hamburger');
-                
-                if (!nav.contains(e.target) && !hamburger.contains(e.target)) {
+
+                if (nav && hamburger && !nav.contains(e.target) && !hamburger.contains(e.target)) {
                     nav.classList.remove('show');
                     hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Close mobile menu on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    const nav = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    if (nav && hamburger) {
+                        nav.classList.remove('show');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
                 }
             });
         });
