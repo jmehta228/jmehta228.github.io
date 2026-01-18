@@ -128,6 +128,7 @@ body::after {
         radial-gradient(circle at 80% 80%, rgba(123, 97, 255, 0.08) 0%, transparent 50%),
         radial-gradient(circle at 40% 60%, rgba(91, 163, 255, 0.05) 0%, transparent 40%);
     animation: orbPulse 15s ease-in-out infinite;
+    will-change: opacity;
 }
 
 @keyframes orbPulse {
@@ -188,10 +189,10 @@ main {
     z-index: 1000;
     padding: var(--space-sm) var(--space-md);
     background: rgba(10, 14, 26, 0.7);
-    backdrop-filter: blur(var(--blur-md));
-    -webkit-backdrop-filter: blur(var(--blur-md));
     border-bottom: 1px solid var(--glass-border);
     transition: all var(--transition-normal);
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .header-container {
@@ -236,8 +237,6 @@ main {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-pill);
-    backdrop-filter: blur(var(--blur-sm));
-    -webkit-backdrop-filter: blur(var(--blur-sm));
 }
 
 .horizontal-list a {
@@ -283,8 +282,6 @@ button:focus-visible {
     border-radius: var(--radius-sm);
     cursor: pointer;
     transition: all var(--transition-fast);
-    backdrop-filter: blur(var(--blur-sm));
-    -webkit-backdrop-filter: blur(var(--blur-sm));
 }
 
 .hamburger:hover {
@@ -344,8 +341,6 @@ button:focus-visible {
     background: var(--glass-bg);
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-sm);
-    backdrop-filter: blur(var(--blur-sm));
-    -webkit-backdrop-filter: blur(var(--blur-sm));
     transition: all var(--transition-normal);
 }
 
@@ -370,8 +365,6 @@ button:focus-visible {
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
-    backdrop-filter: blur(var(--blur-md));
-    -webkit-backdrop-filter: blur(var(--blur-md));
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
 }
@@ -404,8 +397,6 @@ button:focus-visible {
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
-    backdrop-filter: blur(var(--blur-md));
-    -webkit-backdrop-filter: blur(var(--blur-md));
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
 }
@@ -498,8 +489,6 @@ button:focus-visible {
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: var(--space-xl);
-    backdrop-filter: blur(var(--blur-md));
-    -webkit-backdrop-filter: blur(var(--blur-md));
     box-shadow: var(--shadow-md);
 }
 
@@ -543,8 +532,6 @@ button:focus-visible {
     border: 1px solid var(--glass-border-hover);
     border-radius: var(--radius-pill);
     box-shadow: var(--shadow-sm);
-    backdrop-filter: blur(var(--blur-sm));
-    -webkit-backdrop-filter: blur(var(--blur-sm));
     transition: all var(--transition-normal);
     cursor: pointer;
 }
@@ -602,8 +589,6 @@ button:focus-visible {
     background: linear-gradient(135deg, rgba(91, 163, 255, 0.15), rgba(123, 97, 255, 0.15));
     border: 1px solid var(--glass-border-hover);
     border-radius: var(--radius-pill);
-    backdrop-filter: blur(var(--blur-sm));
-    -webkit-backdrop-filter: blur(var(--blur-sm));
     transition: all var(--transition-normal);
 }
 
@@ -629,8 +614,6 @@ button:focus-visible {
     border: 1px solid var(--glass-border);
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
-    backdrop-filter: blur(var(--blur-md));
-    -webkit-backdrop-filter: blur(var(--blur-md));
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
     display: flex;
@@ -747,8 +730,6 @@ button:focus-visible {
     border: 1px solid var(--glass-border-hover);
     border-radius: var(--radius-pill);
     box-shadow: var(--shadow-sm);
-    backdrop-filter: blur(var(--blur-sm));
-    -webkit-backdrop-filter: blur(var(--blur-sm));
     transition: all var(--transition-normal);
     cursor: pointer;
 }
@@ -779,8 +760,6 @@ button:focus-visible {
     border-left: 3px solid var(--accent-primary);
     border-radius: var(--radius-lg);
     padding: var(--space-lg);
-    backdrop-filter: blur(var(--blur-md));
-    -webkit-backdrop-filter: blur(var(--blur-md));
     box-shadow: var(--shadow-md);
     transition: all var(--transition-normal);
 }
@@ -906,8 +885,6 @@ button:focus-visible {
     padding: var(--space-xl) var(--section-gutter);
     background: var(--glass-bg);
     border-top: 1px solid var(--glass-border);
-    backdrop-filter: blur(var(--blur-md));
-    -webkit-backdrop-filter: blur(var(--blur-md));
 }
 
 .footer-container {
