@@ -90,18 +90,48 @@
                         <p class="contact-description">
                             Feel free to contact me if you have any questions or would like to collaborate on a project!
                         </p>
-                        <div class="contact-buttons">
-                            <a href="mailto:mehtajaisal05@gmail.com"
-                               class="contact-btn"
-                               aria-label="Send email to Jaisal Mehta">
-                                Email Me
-                            </a>
-                            <a href="tel:+1-847-877-3254"
-                               class="contact-btn"
-                               aria-label="Call Jaisal Mehta">
-                                Call Me
-                            </a>
-                        </div>
+                        <form class="contact-form" id="contact-form"
+                              action="https://formsubmit.co/ajax/mehtajaisal05@gmail.com" method="POST">
+                            <div class="form-row">
+                                <label for="cf-name">Name</label>
+                                <input type="text" id="cf-name" name="name" required autocomplete="name">
+                            </div>
+                            <div class="form-row">
+                                <label for="cf-email">Email</label>
+                                <input type="email" id="cf-email" name="email" required autocomplete="email">
+                            </div>
+                            <div class="form-row">
+                                <label for="cf-message">Message</label>
+                                <textarea id="cf-message" name="message" rows="5" required></textarea>
+                            </div>
+                            <input type="hidden" name="_subject" value="New message from jmehta228.github.io">
+                            <input type="hidden" name="_template" value="table">
+                            <input type="text" name="_honey" tabindex="-1" autocomplete="off" style="display:none">
+                            <button type="submit" class="contact-btn">Send Message</button>
+                            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                        </form>
+                        <script>
+                            document.getElementById('contact-form').addEventListener('submit', async function (e) {
+                                e.preventDefault();
+                                var form = e.target, status = document.getElementById('form-status'),
+                                    btn = form.querySelector('button');
+                                btn.disabled = true;
+                                status.textContent = 'Sending...';
+                                try {
+                                    var res = await fetch(form.action, {
+                                        method: 'POST',
+                                        headers: { 'Accept': 'application/json' },
+                                        body: new FormData(form)
+                                    });
+                                    if (!res.ok) throw new Error();
+                                    form.reset();
+                                    status.textContent = 'Thanks! Your message was sent.';
+                                } catch (err) {
+                                    status.textContent = 'Something went wrong. Please email mehtajaisal05@gmail.com directly.';
+                                }
+                                btn.disabled = false;
+                            });
+                        </script>
                     </div>
                 </div>
             </section>
