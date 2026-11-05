@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TasteSearch is an iOS app for finding restaurants by dish or craving, built with SwiftUI, Google Places, and Supabase by Jaisal Mehta">
+    <title>TasteSearch - Jaisal Mehta</title>
+    <link rel="icon" href="/Images/apple-touch-icon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+
+    <div id="root">
+        <header class="header">
+            <div class="header-container">
+                <h1 class="site-title">
+                    <a href="/index.html">Jaisal Mehta</a>
+                </h1>
+                <button class="hamburger" onclick="toggleMenu()" aria-label="Toggle navigation menu" aria-expanded="false">
+                    ☰
+                </button>
+                <nav class="nav-desktop" aria-label="Main navigation">
+                    <ul class="horizontal-list">
+                        <li><a href="/index.html">Home</a></li>
+                        <li><a href="/Section-Files/projects.html" aria-current="page">Projects</a></li>
+                        <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                        <li><a href="/Section-Files/resume.html">Resume</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <nav class="nav-menu" id="mobileMenu" aria-label="Mobile navigation">
+                <ul class="vertical-list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/Section-Files/projects.html" aria-current="page">Projects</a></li>
+                    <li><a href="/Section-Files/certifications.html">Certifications</a></li>
+                    <li><a href="/Section-Files/resume.html">Resume</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <section id="portfolio">
+                <div class="portfolio-container">
+                    <div class="portfolio-content">
+                        <nav class="breadcrumb" aria-label="Breadcrumb">
+                            <a href="/Section-Files/projects.html">&larr; Back to Projects</a>
+                        </nav>
+                        <header class="portfolio-header">
+                            <h1 class="page-title">TasteSearch</h1>
+                            <p class="page-subtitle">An iOS app for finding restaurants by dish or craving</p>
+                            <div class="tech-list detail-tags" role="list" aria-label="Technologies used">
+                                    <span class="tech-tag" role="listitem">Swift</span>
+                                    <span class="tech-tag" role="listitem">SwiftUI</span>
+                                    <span class="tech-tag" role="listitem">SwiftData</span>
+                                    <span class="tech-tag" role="listitem">Google Places API</span>
+                                    <span class="tech-tag" role="listitem">Supabase</span>
+                                    <span class="tech-tag" role="listitem">PostgreSQL</span>
+                                    <span class="tech-tag" role="listitem">Row Level Security</span>
+                                    <span class="tech-tag" role="listitem">NaturalLanguage</span>
+                                    <span class="tech-tag" role="listitem">Apple Foundation Models</span>
+                                    <span class="tech-tag" role="listitem">MapKit</span>
+                                    <span class="tech-tag" role="listitem">CoreLocation</span>
+                                    <span class="tech-tag" role="listitem">Swift Testing</span>
+                                    <span class="tech-tag" role="listitem">GitHub Actions</span>
+                                    <span class="tech-tag" role="listitem">SwiftLint</span>
+                            </div>
+                            <div class="contact-buttons">
+                                <a href="https://github.com/jmehta228/TasteSearch"
+                                   target="_blank"
+                                   rel="noopener noreferrer"
+                                   class="contact-btn"
+                                   aria-label="View TasteSearch source code on GitHub">
+                                    View on GitHub ⬈
+                                </a>
+                            </div>
+                        </header>
+
+                        <section class="detail-section" aria-labelledby="overview-heading">
+                            <article class="project-card">
+                                <h2 class="detail-heading" id="overview-heading">Overview</h2>
+                                <p class="project-description">
+                                    Type something like “birria tacos”, pick a location, and TasteSearch returns nearby restaurants filtered by dietary needs, price, and whether they are open. Results can be grouped by cuisine or shown on a map. The goal is to search by what you want to eat, not just by restaurant name or category.
+                                </p>
+                                <p class="project-description">
+                                    The app is built entirely in SwiftUI with no third-party Swift packages. Restaurant data comes from the Google Places API, accounts and sync run on Supabase, and the language features run on the device with Apple's frameworks, so review text is never sent to a third-party AI service.
+                                </p>
+                            </article>
+                        </section>
+
+                        <section class="detail-section" aria-labelledby="features-heading">
+                            <h2 class="detail-heading" id="features-heading">Features</h2>
+                            <div class="card-grid">
+                                <article class="project-card feature-card">
+                                    <h3 class="feature-title">Dish-first search</h3>
+                                    <p class="project-description">Natural queries are cleaned up (“i'm looking for birria tacos near me” becomes “birria tacos”) and searched with Google Places, then ranked by relevance, rating, reviews, distance, or hidden gems.</p>
+                                </article>
+                                <article class="project-card feature-card">
+                                    <h3 class="feature-title">Smart filters</h3>
+                                    <p class="project-description">Dietary needs (halal, kosher, vegetarian, vegan, gluten-free, dairy-free, nut-free, healthy), price range, cuisine, open now, and search radius.</p>
+                                </article>
+                                <article class="project-card feature-card">
+                                    <h3 class="feature-title">Flexible views</h3>
+                                    <p class="project-description">See results as a list, grouped by cuisine, or on a map. Restaurant pages add reviews, phone, website, directions, and a summary of what reviewers say.</p>
+                                </article>
+                                <article class="project-card feature-card">
+                                    <h3 class="feature-title">Accounts and favorites</h3>
+                                    <p class="project-description">Sign in with email or username. Favorites and private notes are stored with SwiftData and sync across devices through Supabase.</p>
+                                </article>
+                                <article class="project-card feature-card">
+                                    <h3 class="feature-title">Friends</h3>
+                                    <p class="project-description">Add friends by username and browse each other's favorite restaurants.</p>
+                                </article>
+                                <article class="project-card feature-card">
+                                    <h3 class="feature-title">Group Swipe and Date Night</h3>
+                                    <p class="project-description">Swipe through restaurants with friends in a shared session using a join code or invite link, and get a ranked list of group matches. Date Night plans an outing from a plain-language request.</p>
+                                </article>
+                            </div>
+                        </section>
+
+                        <section class="detail-section" aria-labelledby="architecture-heading">
+                            <article class="project-card">
+                                <h2 class="detail-heading" id="architecture-heading">Architecture</h2>
+                                <ul class="detail-list">
+                                <li class="detail-item"><strong>UI.</strong> SwiftUI for iOS 18.5+, with a custom design system (glassmorphic cards, animated gradients, dark and light themes).</li>
+                                <li class="detail-item"><strong>State.</strong> Plain ObservableObject managers for auth, favorites, friends, and theme, injected at the app root.</li>
+                                <li class="detail-item"><strong>Local storage.</strong> SwiftData for favorites and search history, Keychain for the session, and UserDefaults for preferences.</li>
+                                <li class="detail-item"><strong>Backend.</strong> Supabase Auth and Postgres, called directly over REST with URLSession instead of the SDK. Row Level Security protects each user's data, and SQL functions handle group sessions.</li>
+                                <li class="detail-item"><strong>On-device AI.</strong> The NaturalLanguage framework and a bundled dish database and food lexicon parse queries and categorize cuisines. Apple Foundation Models (iOS 26+) power review summaries and dish suggestions.</li>
+                                <li class="detail-item"><strong>Maps and location.</strong> MapKit and CoreLocation for the map view, distance sorting, and directions.</li>
+                                </ul>
+                            </article>
+                        </section>
+
+                        <section class="detail-section" aria-labelledby="quality-heading">
+                            <article class="project-card">
+                                <h2 class="detail-heading" id="quality-heading">Testing and delivery</h2>
+                                <p class="project-description">
+                                    About 60 unit tests written with Swift Testing cover search filters, the dish database, the food lexicon, cuisine mapping, group swiping, and Supabase decoding, and they need no network or API keys. GitHub Actions runs SwiftLint, Gitleaks secret scanning, repository hygiene checks, and a build on every push and pull request. Documentation for each subsystem lives in the repository's docs folder.
+                                </p>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        function toggleMenu() {
+            const nav = document.querySelector('.nav-menu');
+            const hamburger = document.querySelector('.hamburger');
+            const isExpanded = nav.classList.contains('show');
+
+            nav.classList.toggle('show');
+            hamburger.setAttribute('aria-expanded', !isExpanded);
+        }
+
+        // Enhanced keyboard support and accessibility
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.querySelector('.hamburger');
+
+            if (hamburger) {
+                hamburger.addEventListener('keydown', function(e) {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        toggleMenu();
+                    }
+                });
+            }
+
+            // Close mobile menu when clicking outside
+            document.addEventListener('click', function(e) {
+                const nav = document.querySelector('.nav-menu');
+                const hamburger = document.querySelector('.hamburger');
+
+                if (nav && hamburger && !nav.contains(e.target) && !hamburger.contains(e.target)) {
+                    nav.classList.remove('show');
+                    hamburger.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Close mobile menu on escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') {
+                    const nav = document.querySelector('.nav-menu');
+                    const hamburger = document.querySelector('.hamburger');
+                    if (nav && hamburger) {
+                        nav.classList.remove('show');
+                        hamburger.setAttribute('aria-expanded', 'false');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

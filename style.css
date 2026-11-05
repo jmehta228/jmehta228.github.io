@@ -748,6 +748,72 @@ button:focus-visible {
     transform: translateY(-1px);
 }
 
+/* Project Detail Pages */
+.breadcrumb {
+    margin-bottom: var(--space-md);
+}
+
+.breadcrumb a {
+    color: var(--text-accent);
+    transition: color var(--transition-fast);
+}
+
+.breadcrumb a:hover,
+.breadcrumb a:focus {
+    color: var(--text-accent-hover);
+}
+
+.detail-tags {
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+.portfolio-header .contact-buttons {
+    justify-content: center;
+    margin-top: var(--space-md);
+}
+
+.detail-section {
+    margin-top: var(--space-xl);
+}
+
+.detail-section .project-card:hover {
+    transform: none;
+}
+
+.detail-heading {
+    font-size: var(--font-size-2xl);
+    font-weight: 600;
+    margin-bottom: var(--space-sm);
+}
+
+.detail-section > .detail-heading {
+    margin-bottom: 0;
+}
+
+.detail-section .project-description + .project-description {
+    margin-top: var(--space-sm);
+}
+
+.feature-title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.detail-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+    padding-left: 1.25rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+}
+
+.detail-list strong {
+    color: var(--text-primary);
+}
+
 /* Certification Specific Styles */
 .certification-item {
     border-left: 3px solid var(--accent-primary);
