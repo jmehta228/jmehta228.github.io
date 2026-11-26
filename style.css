@@ -189,10 +189,19 @@ main {
     z-index: 1000;
     padding: var(--space-sm) var(--space-md);
     background: rgba(10, 14, 26, 0.7);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    backdrop-filter: blur(16px) saturate(160%);
     border-bottom: 1px solid var(--glass-border);
     transition: all var(--transition-normal);
     transform: translateZ(0);
     will-change: transform;
+}
+
+/* Stronger blur + darker tint while the mobile menu is open */
+.header:has(.nav-menu.show) {
+    background: rgba(10, 14, 26, 0.85);
+    -webkit-backdrop-filter: blur(28px) saturate(160%);
+    backdrop-filter: blur(28px) saturate(160%);
 }
 
 .header-container {
